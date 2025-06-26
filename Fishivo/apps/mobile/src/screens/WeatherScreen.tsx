@@ -24,6 +24,18 @@ import { theme } from '@fishivo/shared';
 
 const { width, height } = Dimensions.get('window');
 
+interface SavedLocation {
+  id: string;
+  name: string;
+  type: 'manual' | 'spot' | 'current';
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
+  address: string;
+  isFavorite: boolean;
+}
+
 interface WeatherScreenProps {
   navigation: any;
 }
@@ -43,10 +55,10 @@ interface WeatherData {
   };
   hourly: Array<{
     time: string;
-    temperature: number;
+    temp: number;
     condition: string;
     icon: string;
-    precipitation: number;
+    rain: number;
   }>;
   daily: Array<{
     date: string;
@@ -73,7 +85,17 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [location, setLocation] = useState('İstanbul, Türkiye');
+  const [location, setLocation] = useState<SavedLocation>({
+    id: '1',
+    name: 'İstanbul, Türkiye',
+    type: 'current',
+    coordinates: {
+      latitude: 41.0082,
+      longitude: 28.9784
+    },
+    address: 'İstanbul, Türkiye',
+    isFavorite: false
+  });
 
   // Mock weather data
   const mockWeatherData: WeatherData = {
@@ -90,12 +112,12 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
       feelsLike: 24,
     },
     hourly: [
-      { time: '14:00', temperature: 22, condition: 'Parçalı Bulutlu', icon: 'partly-cloudy', precipitation: 0 },
-      { time: '15:00', temperature: 23, condition: 'Güneşli', icon: 'sunny', precipitation: 0 },
-      { time: '16:00', temperature: 24, condition: 'Güneşli', icon: 'sunny', precipitation: 0 },
-      { time: '17:00', temperature: 23, condition: 'Parçalı Bulutlu', icon: 'partly-cloudy', precipitation: 10 },
-      { time: '18:00', temperature: 21, condition: 'Bulutlu', icon: 'cloudy', precipitation: 20 },
-      { time: '19:00', temperature: 20, condition: 'Hafif Yağmur', icon: 'light-rain', precipitation: 40 },
+      { time: '14:00', temp: 22, condition: 'Parçalı Bulutlu', icon: 'partly-cloudy', rain: 0 },
+      { time: '15:00', temp: 23, condition: 'Güneşli', icon: 'sunny', rain: 0 },
+      { time: '16:00', temp: 24, condition: 'Güneşli', icon: 'sunny', rain: 0 },
+      { time: '17:00', temp: 23, condition: 'Parçalı Bulutlu', icon: 'partly-cloudy', rain: 10 },
+      { time: '18:00', temp: 21, condition: 'Bulutlu', icon: 'cloudy', rain: 20 },
+      { time: '19:00', temp: 20, condition: 'Hafif Yağmur', icon: 'light-rain', rain: 40 },
     ],
     daily: [
       { date: 'Bugün', high: 24, low: 18, condition: 'Parçalı Bulutlu', icon: 'partly-cloudy', precipitation: 20, humidity: 65, windSpeed: 12 },
@@ -175,7 +197,7 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
           <ScreenContainer>
             <WeatherErrorState
               error={error}
-              onRetry={fetchWeatherData}
+              onRetry={loadWeatherData}
             />
           </ScreenContainer>
         </SafeAreaView>
@@ -190,7 +212,7 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
           <ScreenContainer>
             <WeatherErrorState
               error="Hava durumu verileri bulunamadı"
-              onRetry={fetchWeatherData}
+              onRetry={loadWeatherData}
             />
           </ScreenContainer>
         </SafeAreaView>
@@ -232,7 +254,7 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
             {/* Current Weather */}
             <CurrentWeatherCard 
               weatherData={weatherData}
-              location={currentLocation}
+              location={location}
               formattedTemperature={`${weatherData.current.temperature}°C`}
               formattedWindSpeed={`${weatherData.current.windSpeed} km/h`}
             />
@@ -240,44 +262,84 @@ const WeatherScreen: React.FC<WeatherScreenProps> = ({ navigation }) => {
             {/* Hourly Forecast */}
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Saatlik Tahmin</Text>
-              <HourlyForecast data={weatherData.hourly} />
+              <HourlyForecast 
+                data={weatherData.hourly} 
+                getConditionIcon={(condition: string) => {
+                  switch (condition) {
+                    case 'Güneşli': return 'sunny';
+                    case 'Parçalı Bulutlu': return 'partly-cloudy';
+                    case 'Bulutlu': return 'cloudy';
+                    case 'Yağmurlu': return 'rainy';
+                    case 'Hafif Yağmur': return 'light-rain';
+                    case 'Fırtınalı': return 'stormy';
+                    default: return 'sunny';
+                  }
+                }}
+              />
             </View>
 
             {/* Fishing Conditions */}
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Balıkçılık Koşulları</Text>
-              <FishingConditionsCard conditions={weatherData.fishingConditions} />
+              <FishingConditionsCard fishingData={weatherData.fishingConditions} />
             </View>
 
             {/* Weather Details */}
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>Detaylar</Text>
               <WeatherDetailsGrid 
-                humidity={weatherData.current.humidity}
-                windSpeed={weatherData.current.windSpeed}
-                windDirection={weatherData.current.windDirection}
-                pressure={weatherData.current.pressure}
-                visibility={weatherData.current.visibility}
-                uvIndex={weatherData.current.uvIndex}
+                weatherDetails={[
+                  {
+                    icon: 'droplet',
+                    title: 'Nem',
+                    value: weatherData.current.humidity.toString(),
+                    unit: '%'
+                  },
+                  {
+                    icon: 'wind',
+                    title: 'Rüzgar',
+                    value: weatherData.current.windSpeed.toString(),
+                    unit: 'km/h'
+                  },
+                  {
+                    icon: 'compass',
+                    title: 'Yön',
+                    value: weatherData.current.windDirection
+                  },
+                  {
+                    icon: 'gauge',
+                    title: 'Basınç',
+                    value: weatherData.current.pressure.toString(),
+                    unit: 'hPa'
+                  },
+                  {
+                    icon: 'eye',
+                    title: 'Görüş',
+                    value: weatherData.current.visibility.toString(),
+                    unit: 'km'
+                  },
+                  {
+                    icon: 'sun',
+                    title: 'UV İndeksi',
+                    value: weatherData.current.uvIndex.toString()
+                  }
+                ]}
               />
             </View>
 
             {/* Daily Forecast */}
             <View style={styles.section}>
               <Text style={styles.sectionTitle}>7 Günlük Tahmin</Text>
-              <View style={styles.dailyForecastContainer}>
-                {weatherData.daily.map((day, index) => (
-                  <DailyForecastCard
-                    key={index}
-                    date={day.date}
-                    high={day.high}
-                    low={day.low}
-                    condition={day.condition}
-                    icon={day.icon}
-                    precipitation={day.precipitation}
-                  />
-                ))}
-              </View>
+              <DailyForecastCard
+                dailyData={weatherData.daily}
+                formattedDailyTemps={weatherData.daily.reduce((acc, day, index) => {
+                  acc[index] = {
+                    high: `${day.high}°`,
+                    low: `${day.low}°`
+                  };
+                  return acc;
+                }, {} as {[key: number]: {high: string, low: string}})}
+              />
             </View>
 
             {/* Bottom Spacing */}

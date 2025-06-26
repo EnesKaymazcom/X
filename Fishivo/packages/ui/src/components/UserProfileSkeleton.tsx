@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { theme } from '../theme';
+import { theme } from '@fishivo/shared';
 
 // This is a simplified skeleton loader. For a more advanced version,
 // you could use libraries like 'react-native-skeleton-placeholder'

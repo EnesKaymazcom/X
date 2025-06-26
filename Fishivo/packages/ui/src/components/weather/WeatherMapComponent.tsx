@@ -7,7 +7,7 @@ import {
   Platform,
 } from 'react-native';
 import Icon from '../Icon';
-import { theme } from '../../theme';
+import { theme } from '@fishivo/shared';
 
 // Note: This is a simplified version of WeatherMapComponent
 // The original uses @rnmapbox/maps which requires additional setup

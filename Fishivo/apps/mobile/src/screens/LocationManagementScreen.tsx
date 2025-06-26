@@ -1,14 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '../components/Icon';
-import LocationCard from '../components/LocationCard';
-import AppHeader from '../components/AppHeader';
-import TabSelector from '../components/TabSelector';
-import { theme } from '../theme';
-import { ScreenContainer } from '../components';
-import { apiService } from '../services/api';
-import ConfirmModal from '../components/ConfirmModal';
+import { Icon, AppHeader, TabSelector, ScreenContainer, ConfirmModal, LocationCard } from '@fishivo/ui';
+import { theme, apiService } from '@fishivo/shared';
 
 interface LocationManagementScreenProps {
   navigation: any;
@@ -353,6 +347,13 @@ const styles = StyleSheet.create({
   },
   locationsList: {
     gap: theme.spacing.sm,
+  },
+  locationItem: {
+    padding: theme.spacing.md,
+    backgroundColor: theme.colors.surface,
+    borderRadius: theme.borderRadius.md,
+    borderWidth: 1,
+    borderColor: theme.colors.border,
   },
   emptyContainer: {
     alignItems: 'center',

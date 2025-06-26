@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, TouchableOpacity, StyleSheet, Image, Text, View, Dimensions } from 'react-native';
-import { theme } from '../theme';
+import { theme } from '@fishivo/shared';
 
 interface Post {
   id: string;

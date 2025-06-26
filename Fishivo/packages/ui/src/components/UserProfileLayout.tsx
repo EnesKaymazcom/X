@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from './Icon';
 import Button from './Button';
 import Avatar from './Avatar';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 // Placeholder for ProfileHeader component
 const ProfileHeader = ({ name, isPro, nameSize, onProPress }: any) => (

@@ -11,6 +11,7 @@ export { default as DefaultAvatar } from './components/DefaultAvatar';
 export { default as ScreenContainer } from './components/ScreenContainer';
 export { default as AppHeader } from './components/AppHeader';
 export { default as TabSelector } from './components/TabSelector';
+export { default as LocationCard } from './components/LocationCard';
 export { default as FloatingActionMenu } from './components/FloatingActionMenu';
 export { default as BottomSheetModal } from './components/BottomSheetModal';
 
@@ -34,6 +35,13 @@ export { default as CrownIcon } from './components/CrownIcon';
 // Modal Components
 export { default as ConfirmModal } from './components/ConfirmModal';
 export { default as SuccessModal } from './components/SuccessModal';
+export { default as PhotoPickerModal } from './components/PhotoPickerModal';
+export { default as FishingTechniqueSelectorModal } from './components/FishingTechniqueSelectorModal';
+export { default as EquipmentSelectorModal } from './components/EquipmentSelectorModal';
+export { default as WeatherSelectorModal } from './components/WeatherSelectorModal';
+
+// Map Components
+export { default as MapComponent } from './components/MapComponent';
 
 // Selector Components
 export { default as CountryCitySelector } from './components/CountryCitySelector';

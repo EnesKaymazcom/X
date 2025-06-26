@@ -19,8 +19,8 @@ import {
   ScreenContainer,
   SuccessModal
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService } from '@fishivo/shared/services';
+import { theme } from '@fishivo/shared';
+import { apiService } from '@fishivo/shared';
 
 interface AddGearScreenProps {
   navigation: any;
@@ -499,7 +499,7 @@ const AddGearScreen: React.FC<AddGearScreenProps> = ({ navigation }) => {
     <ScreenContainer>
       <AppHeader 
         title={getScreenTitle()}
-        showBackButton 
+        canGoBack 
         onBackPress={handleGoBack}
       />
       

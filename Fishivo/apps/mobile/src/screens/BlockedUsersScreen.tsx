@@ -16,8 +16,8 @@ import {
   ScreenContainer,
   ConfirmModal
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService } from '@fishivo/shared/services';
+import { theme } from '@fishivo/shared';
+import { apiService } from '@fishivo/shared';
 
 interface BlockedUsersScreenProps {
   navigation: any;
@@ -120,7 +120,7 @@ const BlockedUsersScreen: React.FC<BlockedUsersScreenProps> = ({ navigation }) =
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Engellenen Kullanıcılar"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
 

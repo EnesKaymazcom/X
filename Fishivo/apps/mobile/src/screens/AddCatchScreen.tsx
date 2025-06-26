@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   View,
   Text,
@@ -24,14 +24,10 @@ import {
   FishingTechniqueSelectorModal,
   EquipmentSelectorModal,
   WeatherSelectorModal,
-  LocationCard,
   MapComponent
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { useUnits } from '@fishivo/shared/hooks';
-import { apiService } from '@fishivo/shared/services';
-import { imageUploadService } from '@fishivo/shared/services';
-import { useLocation, formatLocationString, getMapboxCoordinates } from '@fishivo/shared/services';
+import { theme, useUnits, apiService, imageUploadService, formatLocationString, getMapboxCoordinates, FishingTechnique } from '@fishivo/shared';
+import { useLocation } from '../hooks/useLocation';
 
 interface AddCatchScreenProps {
   navigation: any;
@@ -52,7 +48,7 @@ interface CatchData {
   location: string;
   date: string;
   time: string;
-  technique: string;
+  technique: FishingTechnique | null;
   weather: string;
   notes: string;
   images: string[];
@@ -81,7 +77,7 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
     location: '',
     date: new Date().toLocaleDateString('tr-TR'),
     time: new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' }),
-    technique: '',
+    technique: null,
     weather: '',
     notes: '',
     images: [],
@@ -112,7 +108,7 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
 
   // API'den veri state'leri
   const [fishSpecies, setFishSpecies] = useState<string[]>([]);
-  const [techniques, setTechniques] = useState<string[]>([]);
+  const [techniques, setTechniques] = useState<FishingTechnique[]>([]);
   const [weatherConditions, setWeatherConditions] = useState<string[]>([]);
 
   // AddSpot'tan gelen yeni spot'u dinle
@@ -305,7 +301,7 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
     <ScreenContainer>
       <AppHeader 
         title="Av Ekle" 
-        showBackButton 
+        canGoBack 
         onBackPress={() => navigation.goBack()}
       />
       
@@ -477,7 +473,7 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
             title="Avı Kaydet"
             onPress={handleSaveCatch}
             variant="primary"
-            size="large"
+            size="lg"
           />
         </View>
       </ScrollView>
@@ -493,9 +489,8 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
       <FishSpeciesSelectorModal
         visible={showFishSpeciesModal}
         onClose={() => setShowFishSpeciesModal(false)}
-        species={fishSpecies}
-        onSelect={(species) => {
-          setCatchData(prev => ({ ...prev, species }));
+        onSelect={(species, waterType) => {
+          setCatchData(prev => ({ ...prev, species, waterType }));
           setShowFishSpeciesModal(false);
         }}
       />
@@ -513,7 +508,6 @@ const AddCatchScreen: React.FC<AddCatchScreenProps> = ({ navigation, route }) =>
       <WeatherSelectorModal
         visible={showWeatherModal}
         onClose={() => setShowWeatherModal(false)}
-        conditions={weatherConditions}
         onSelect={(weather) => {
           setCatchData(prev => ({ ...prev, weather }));
           setShowWeatherModal(false);

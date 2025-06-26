@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Modal } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { 
@@ -9,8 +9,8 @@ import {
   ConfirmModal,
   SuccessModal
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService } from '@fishivo/shared/services';
+import { theme } from '@fishivo/shared';
+import { apiService } from '@fishivo/shared';
 
 interface AddLocationScreenProps {
   navigation: any;
@@ -134,7 +134,7 @@ const AddLocationScreen: React.FC<AddLocationScreenProps> = ({ navigation }) => 
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Lokasyon Ekle"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
 

@@ -12,18 +12,8 @@ import {
   Dimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from 'react-native-vector-icons/Feather';
-import { Button } from '../components/Button';
-import { ProBadge } from '../components/ProBadge';
-import { UserDisplayName } from '../components/UserDisplayName';
-import { EquipmentCard } from '../components/EquipmentCard';
-import { Avatar } from '../components/Avatar';
-import { CatchCard } from '../components/CatchCard';
-import { AppHeader } from '../components/AppHeader';
-import { theme } from '../theme';
-import { ScreenContainer } from '../components/ScreenContainer';
-import { SuccessModal } from '../components/SuccessModal';
-import { useUnits } from '../hooks/useUnits';
+import { Icon, Button, ProBadge, UserDisplayName, EquipmentCard, Avatar, CatchCard, AppHeader, ScreenContainer, SuccessModal } from '@fishivo/ui';
+import { theme, useUnits } from '@fishivo/shared';
 
 interface PostDetailScreenProps {
   navigation: any;
@@ -158,7 +148,7 @@ const PostDetailScreen: React.FC<PostDetailScreenProps> = ({ navigation, route }
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Gönderi"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
       <ScreenContainer>

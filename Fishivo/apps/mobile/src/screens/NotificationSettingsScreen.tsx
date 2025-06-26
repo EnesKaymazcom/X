@@ -7,10 +7,8 @@ import {
   ScrollView,
   Switch,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Feather';
-import { AppHeader } from '../components/AppHeader';
-import { ScreenContainer } from '../components/ScreenContainer';
-import { theme } from '../theme';
+import { Icon, AppHeader, ScreenContainer } from '@fishivo/ui';
+import { theme } from '@fishivo/shared';
 
 interface NotificationSettingsScreenProps {
   navigation: any;
@@ -49,7 +47,7 @@ const NotificationSettingsScreen: React.FC<NotificationSettingsScreenProps> = ({
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Bildirim Ayarları"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
       <ScreenContainer>

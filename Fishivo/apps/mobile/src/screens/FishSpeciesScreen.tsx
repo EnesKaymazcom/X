@@ -9,12 +9,9 @@ import {
   Image,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '../components/Icon';
-import AppHeader from '../components/AppHeader';
-import { theme } from '../theme';
-import { ScreenContainer } from '../components';
+import { Icon, AppHeader, ScreenContainer } from '@fishivo/ui';
+import { theme, apiService } from '@fishivo/shared';
 // Mock JSON dosyası kaldırıldı - API'den gelecek
-import { apiService } from '../services/api';
 
 interface FishSpeciesScreenProps {
   navigation: any;

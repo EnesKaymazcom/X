@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 interface UserDisplayNameProps {
   name: string;

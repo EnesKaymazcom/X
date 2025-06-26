@@ -1,3 +1,5 @@
+// Units types for Fishivo
+
 export interface UserUnits {
   weight: 'kg' | 'lbs' | 'g' | 'oz';
   length: 'cm' | 'inch' | 'm' | 'ft';

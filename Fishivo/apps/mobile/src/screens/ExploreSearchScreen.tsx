@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -18,8 +18,8 @@ import {
   AppHeader,
   ScreenContainer
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService } from '@fishivo/shared/services';
+import { theme } from '@fishivo/shared';
+import { apiService } from '@fishivo/shared';
 
 interface ExploreSearchScreenProps {
   navigation: any;
@@ -137,7 +137,7 @@ const ExploreSearchScreen: React.FC<ExploreSearchScreenProps> = ({ navigation })
       <SafeAreaView style={styles.safeArea}>
         <AppHeader
           title="Keşfet"
-          showBackButton
+          canGoBack
           onBackPress={handleClose}
         />
 

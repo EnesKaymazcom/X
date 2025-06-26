@@ -19,9 +19,8 @@ import {
   ConfirmModal,
   CountryCitySelector
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService, ImageUploadService } from '@fishivo/shared/services';
-import { useAuth } from '@fishivo/shared/contexts';
+import { theme, apiService, ImageUploadService } from '@fishivo/shared';
+import { useAuth } from '../contexts';
 
 interface EditProfileScreenProps {
   navigation: any;
@@ -346,7 +345,7 @@ const EditProfileScreen: React.FC<EditProfileScreenProps> = ({ navigation }) => 
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Profili Düzenle"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
       

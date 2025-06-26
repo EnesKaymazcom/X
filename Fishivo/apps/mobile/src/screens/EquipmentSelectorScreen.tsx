@@ -17,8 +17,8 @@ import {
   AppHeader,
   ScreenContainer
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { apiService } from '@fishivo/shared/services';
+import { theme } from '@fishivo/shared';
+import { apiService } from '@fishivo/shared';
 
 interface EquipmentSelectorScreenProps {
   navigation: any;
@@ -109,7 +109,7 @@ const EquipmentSelectorScreen: React.FC<EquipmentSelectorScreenProps> = ({ navig
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Ekipman Seç"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
       />
       

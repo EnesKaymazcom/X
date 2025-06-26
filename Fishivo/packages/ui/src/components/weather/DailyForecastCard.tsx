@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Icon from '../Icon';
-import { theme } from '../../theme';
+import { theme } from '@fishivo/shared';
 
 // Utility function for weather condition icons
 const getConditionIcon = (condition: string): string => {

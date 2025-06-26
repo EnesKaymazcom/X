@@ -154,8 +154,8 @@ const styles = StyleSheet.create({
     marginBottom: theme.spacing.xs,
   },
   name: {
-    fontSize: theme.typography.fontSizes.lg,
-    fontWeight: theme.typography.fontWeights.semibold,
+    fontSize: theme.typography.lg,
+    fontWeight: theme.typography.semibold,
     color: theme.colors.text,
     flex: 1,
     marginRight: theme.spacing.sm,
@@ -166,11 +166,11 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.sm,
   },
   difficultyText: {
-    fontSize: theme.typography.fontSizes.xs,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontSize: theme.typography.xs,
+    fontWeight: theme.typography.medium,
   },
   scientificName: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     fontStyle: 'italic',
     color: theme.colors.textSecondary,
     marginBottom: theme.spacing.sm,
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   detailText: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.textSecondary,
     flex: 1,
   },
@@ -197,7 +197,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   seasonText: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.textSecondary,
     flex: 1,
   },

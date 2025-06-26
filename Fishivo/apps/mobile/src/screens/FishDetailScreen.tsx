@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -10,11 +10,8 @@ import {
   Image,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from '../components/Icon';
-import AppHeader from '../components/AppHeader';
-import { theme } from '../theme';
-import { ScreenContainer } from '../components';
-import { useUnits } from '../hooks/useUnits';
+import { Icon, AppHeader, ScreenContainer } from '@fishivo/ui';
+import { theme, useUnits } from '@fishivo/shared';
 // Mock JSON dosyaları kaldırıldı - API'den gelecek
 
 interface FishDetailScreenProps {

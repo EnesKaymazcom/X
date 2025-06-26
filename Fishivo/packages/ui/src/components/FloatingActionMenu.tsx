@@ -192,9 +192,9 @@ const styles = StyleSheet.create({
     marginRight: theme.spacing.md,
   },
   menuText: {
-    fontSize: theme.typography.fontSizes.base,
+    fontSize: theme.typography.base,
     color: theme.colors.text,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontWeight: theme.typography.medium,
     flex: 1,
   },
   closeButtonContainer: {

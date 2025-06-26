@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Icon from './Icon';
 import BottomSheetModal from './BottomSheetModal';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 interface FishSpeciesSelectorModalProps {
   visible: boolean;

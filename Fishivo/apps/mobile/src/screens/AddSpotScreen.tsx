@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import {
   View,
   Text,
@@ -20,10 +20,8 @@ import {
   ScreenContainer,
   ConfirmModal
 } from '@fishivo/ui';
-import { theme } from '@fishivo/shared/theme';
-import { useLocation, formatLocationString } from '@fishivo/shared/services';
-import { useAuth } from '@fishivo/shared/contexts';
-import { useUnits } from '@fishivo/shared/hooks';
+import { theme, useLocation, formatLocationString, useUnits } from '@fishivo/shared';
+import { useAuth } from '../contexts';
 
 interface AddSpotScreenProps {
   navigation: any;
@@ -174,7 +172,7 @@ const AddSpotScreen: React.FC<AddSpotScreenProps> = ({ navigation, route }) => {
     <SafeAreaView style={styles.container}>
       <AppHeader
         title="Spot Ekle"
-        showBackButton
+        canGoBack
         onBackPress={() => navigation.goBack()}
         rightComponent={
           <Button

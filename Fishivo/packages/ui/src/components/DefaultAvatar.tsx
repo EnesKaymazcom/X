@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   },
   initials: {
     color: '#FFFFFF',
-    fontWeight: theme.typography.fontWeights.bold,
+    fontWeight: theme.typography.bold,
     textAlign: 'center',
   },
 });

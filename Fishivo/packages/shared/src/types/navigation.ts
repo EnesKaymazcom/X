@@ -1,3 +1,4 @@
+// Navigation types for React Navigation
 import { NavigatorScreenParams } from '@react-navigation/native';
 
 export type RootTabParamList = {

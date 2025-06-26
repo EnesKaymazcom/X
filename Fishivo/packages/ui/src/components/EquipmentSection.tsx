@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import EquipmentCard from './EquipmentCard';
 import AddButton from './AddButton';
-import { theme } from '../theme';
+import { theme } from '@fishivo/shared';
 
 interface FishingGear {
   id: string;

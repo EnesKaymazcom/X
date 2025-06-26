@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -14,15 +14,8 @@ import {
   Modal,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Icon from 'react-native-vector-icons/Feather';
-import { DefaultAvatar } from '../components/DefaultAvatar';
-import { ProBadge } from '../components/ProBadge';
-import { AppHeader } from '../components/AppHeader';
-import { theme } from '../theme';
-import { ScreenContainer } from '../components/ScreenContainer';
-import { ConfirmModal } from '../components/ConfirmModal';
-import { SuccessModal } from '../components/SuccessModal';
-import { apiService } from '../services/api';
+import { Icon, DefaultAvatar, ProBadge, AppHeader, ScreenContainer, ConfirmModal, SuccessModal } from '@fishivo/ui';
+import { theme, apiService } from '@fishivo/shared';
 import { useAuth } from '../contexts/AuthContext';
 
 // Zaman formatlama fonksiyonu
@@ -308,7 +301,7 @@ const NotificationsScreen: React.FC<NotificationsScreenProps> = ({ navigation })
       <View style={styles.headerContainer}>
         <AppHeader
           title="Bildirimler"
-          showBackButton
+          canGoBack
           onBackPress={() => navigation.goBack()}
         />
         <TouchableOpacity onPress={markAllAsRead} style={styles.markAllButton}>

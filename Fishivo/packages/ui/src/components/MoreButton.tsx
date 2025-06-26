@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from './Icon';
-import { theme } from '../theme';
+import { theme } from '@fishivo/shared';
 
 interface MoreButtonProps {
   onPress: () => void;

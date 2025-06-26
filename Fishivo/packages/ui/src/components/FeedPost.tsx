@@ -13,7 +13,7 @@ const ProBadge = ({ variant, size }: any) => (
 const LikeSystem = ({ postId, initialCount, size, onLikeChange, onShowLikers }: any) => (
   <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
     <Icon name="heart" size={size || 20} color={theme.colors.textSecondary} />
-    <Text style={{ fontSize: theme.typography.fontSizes.sm, color: theme.colors.textSecondary }}>
+    <Text style={{ fontSize: theme.typography.sm, color: theme.colors.textSecondary }}>
       {initialCount}
     </Text>
   </TouchableOpacity>
@@ -217,16 +217,16 @@ const styles = StyleSheet.create({
     gap: theme.spacing.xs,
   },
   userName: {
-    fontSize: theme.typography.fontSizes.base,
-    fontWeight: theme.typography.fontWeights.semibold,
+    fontSize: theme.typography.base,
+    fontWeight: theme.typography.semibold,
     color: theme.colors.text,
   },
   postLocation: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.textSecondary,
   },
   timeAgo: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.textSecondary,
   },
   imageContainer: {
@@ -261,12 +261,12 @@ const styles = StyleSheet.create({
     borderRadius: theme.borderRadius.md,
   },
   fishDetails: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.primary,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontWeight: theme.typography.medium,
   },
   description: {
-    fontSize: theme.typography.fontSizes.base,
+    fontSize: theme.typography.base,
     color: theme.colors.text,
     lineHeight: 20,
   },
@@ -284,9 +284,9 @@ const styles = StyleSheet.create({
     padding: theme.spacing.sm,
   },
   actionText: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.textSecondary,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontWeight: theme.typography.medium,
   },
 });
 

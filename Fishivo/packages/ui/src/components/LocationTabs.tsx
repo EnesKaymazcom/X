@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from './Icon';
 import AddButton from './AddButton';
-import { theme } from '../theme';
+import { theme } from '@fishivo/shared';
 
 interface SavedLocation {
   id: string;

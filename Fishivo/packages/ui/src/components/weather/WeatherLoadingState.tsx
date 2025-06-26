@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
-import { theme } from '../../theme';
+import { theme } from '@fishivo/shared';
 
 interface WeatherLoadingStateProps {
   message?: string;

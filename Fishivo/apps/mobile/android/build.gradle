@@ -18,4 +18,6 @@ buildscript {
     }
 }
 
-// apply plugin: "com.facebook.react.rootproject"
+apply plugin: "com.facebook.react.rootproject"
+
+// React Native 0.77 uses plugin from included build - no apply needed here

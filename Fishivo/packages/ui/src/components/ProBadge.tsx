@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from './Icon';
 import CrownIcon from './CrownIcon';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 interface ProBadgeProps {
   variant?: 'icon' | 'badge' | 'banner' | 'button';

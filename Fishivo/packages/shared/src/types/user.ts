@@ -91,7 +91,7 @@ export interface UserProfile extends User {
   followingCount: number;
   isFollowing?: boolean;
   isBlocked?: boolean;
-  recentCatches: import('./api').CatchRecord[];
+  recentCatches: import('./fishing').CatchRecord[];
 }
 
 export interface UpdateProfileData {

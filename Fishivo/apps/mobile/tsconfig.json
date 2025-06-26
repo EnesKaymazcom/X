@@ -2,9 +2,15 @@
   "extends": "@react-native/typescript-config/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
     "paths": {
       "@fishivo/shared": ["../../packages/shared/src"],
-      "@fishivo/ui": ["../../packages/ui/src"]
+      "@fishivo/ui": ["../../packages/ui/src"],
+      "react-native-safe-area-context": ["../../node_modules/react-native-safe-area-context"],
+      "react-native-safe-area-context/*": ["../../node_modules/react-native-safe-area-context/*"]
     }
   },
   "include": [

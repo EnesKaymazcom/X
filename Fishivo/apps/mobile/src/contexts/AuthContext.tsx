@@ -1,103 +1,75 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { apiService } from '@fishivo/shared';
+import { googleSignInService } from '@fishivo/shared';
 
 interface User {
   id: string;
-  name: string;
   email: string;
+  fullName?: string;
   avatar?: string;
-  isPro?: boolean;
+  username?: string;
+  bio?: string;
+  location?: string;
+  [key: string]: any;
 }
 
-interface AuthContextType {
+interface AuthContextValue {
   user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
+  authError: string | null;
   login: (email: string, password: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
   logout: () => Promise<void>;
-  register: (name: string, email: string, password: string) => Promise<void>;
-  updateUser: (userData: Partial<User>) => void;
+  updateProfile: (data: Partial<User>) => Promise<void>;
+  clearAuthError: () => void;
 }
 
-const AuthContext = createContext<AuthContextType | undefined>(undefined);
+const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
-interface AuthProviderProps {
-  children: ReactNode;
-}
-
-export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
+export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [authError, setAuthError] = useState<string | null>(null);
 
   const isAuthenticated = !!user;
 
-  useEffect(() => {
-    checkAuthStatus();
-  }, []);
-
-  const checkAuthStatus = async () => {
-    try {
-      const token = await AsyncStorage.getItem('authToken');
-      const userData = await AsyncStorage.getItem('userData');
-      
-      if (token && userData) {
-        setUser(JSON.parse(userData));
-      }
-    } catch (error) {
-      console.error('Auth check failed:', error);
-    } finally {
-      setIsLoading(false);
-    }
+  const clearAuthError = () => {
+    setAuthError(null);
   };
 
   const login = async (email: string, password: string) => {
     try {
       setIsLoading(true);
+      setAuthError(null);
       
-      // Mock login - replace with actual API call
-      const mockUser: User = {
-        id: '1',
-        name: 'Ahmet Yılmaz',
-        email: email,
-        avatar: '',
-        isPro: true
-      };
-      
-      const mockToken = 'mock-jwt-token';
-      
-      await AsyncStorage.setItem('authToken', mockToken);
-      await AsyncStorage.setItem('userData', JSON.stringify(mockUser));
-      
-      setUser(mockUser);
+      // TODO: Implement login method in apiService
+      throw new Error('Login method not implemented');
     } catch (error) {
-      console.error('Login failed:', error);
+      const message = error instanceof Error ? error.message : 'Login failed';
+      setAuthError(message);
       throw error;
     } finally {
       setIsLoading(false);
     }
   };
 
-  const register = async (name: string, email: string, password: string) => {
+  const signInWithGoogle = async () => {
     try {
       setIsLoading(true);
+      setAuthError(null);
       
-      // Mock registration - replace with actual API call
-      const mockUser: User = {
-        id: '1',
-        name: name,
-        email: email,
-        avatar: '',
-        isPro: false
-      };
-      
-      const mockToken = 'mock-jwt-token';
-      
-      await AsyncStorage.setItem('authToken', mockToken);
-      await AsyncStorage.setItem('userData', JSON.stringify(mockUser));
-      
-      setUser(mockUser);
+      const result = await googleSignInService.signIn();
+      if (result.success && result.data) {
+        setUser(result.data);
+        await AsyncStorage.setItem('auth_token', result.data.token || '');
+      } else {
+        throw new Error(result.error || 'Google sign in failed');
+      }
     } catch (error) {
-      console.error('Registration failed:', error);
+      const message = error instanceof Error ? error.message : 'Google sign in failed';
+      setAuthError(message);
       throw error;
     } finally {
       setIsLoading(false);
@@ -106,40 +78,80 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const logout = async () => {
     try {
-      await AsyncStorage.removeItem('authToken');
-      await AsyncStorage.removeItem('userData');
+      setIsLoading(true);
+      await AsyncStorage.removeItem('auth_token');
       setUser(null);
     } catch (error) {
-      console.error('Logout failed:', error);
+      console.error('Logout error:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const updateUser = (userData: Partial<User>) => {
-    if (user) {
-      const updatedUser = { ...user, ...userData };
-      setUser(updatedUser);
-      AsyncStorage.setItem('userData', JSON.stringify(updatedUser));
+  const updateProfile = async (data: Partial<User>) => {
+    try {
+      setIsLoading(true);
+      setAuthError(null);
+      
+      // TODO: Implement updateProfile method in apiService
+      if (user) {
+        const updatedUser = { ...user, ...data };
+        setUser(updatedUser);
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Profile update failed';
+      setAuthError(message);
+      throw error;
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const value: AuthContextType = {
+  const checkAuthStatus = async () => {
+    try {
+      const token = await AsyncStorage.getItem('auth_token');
+      if (token) {
+        try {
+          // TODO: Implement getProfile method in apiService
+          // const response = await apiService.getProfile();
+          // if (response.success && response.data) {
+          //   setUser(response.data);
+          // } else {
+          //   throw new Error('Failed to get user data');
+          // }
+        } catch (error) {
+          // Token geçersiz, temizle
+          await AsyncStorage.removeItem('auth_token');
+          setUser(null);
+        }
+      }
+    } catch (error) {
+      console.error('Auth check error:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    checkAuthStatus();
+  }, []);
+
+  const value: AuthContextValue = {
     user,
     isAuthenticated,
     isLoading,
+    authError,
     login,
+    signInWithGoogle,
     logout,
-    register,
-    updateUser,
+    updateProfile,
+    clearAuthError,
   };
 
-  return (
-    <AuthContext.Provider value={value}>
-      {children}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
 
-export const useAuth = (): AuthContextType => {
+export const useAuth = () => {
   const context = useContext(AuthContext);
   if (context === undefined) {
     throw new Error('useAuth must be used within an AuthProvider');
@@ -147,4 +159,4 @@ export const useAuth = (): AuthContextType => {
   return context;
 };
 
-export default AuthContext;
+export { AuthContext, AuthProvider };

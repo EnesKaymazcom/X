@@ -251,7 +251,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   location: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.textSecondary,
     flex: 1,
   },
@@ -316,12 +316,12 @@ const styles = StyleSheet.create({
     padding: theme.spacing.md,
   },
   fishSpeciesName: {
-    fontSize: theme.typography.fontSizes.lg,
+    fontSize: theme.typography.lg,
     color: theme.colors.text,
-    fontWeight: theme.typography.fontWeights.semibold,
+    fontWeight: theme.typography.semibold,
   },
   timeAgo: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.textSecondary,
     marginLeft: 'auto',
   },
@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   actionText: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.textSecondary,
   },
 });

@@ -30,7 +30,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({
   return (
     <View style={styles.header}>
       <View style={styles.headerLeft}>
-        {canGoBack && !leftButtons.length && !leftComponent && (
+        {canGoBack && !leftButtons.length && !leftComponent && onBackPress && (
           <IconButton
             icon="arrow-left"
             onPress={onBackPress}
@@ -87,9 +87,9 @@ const styles = StyleSheet.create({
     gap: theme.spacing.sm,
   },
   pageTitle: {
-    fontSize: theme.typography.fontSizes['2xl'],
+    fontSize: theme.typography['2xl'],
     color: theme.colors.text,
-    fontWeight: theme.typography.fontWeights.bold,
+    fontWeight: theme.typography.bold,
   },
 });
 

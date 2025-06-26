@@ -9,11 +9,20 @@ export * from './types';
 // Export all utilities
 export * from './utils';
 
-// Services exports (will be added in next phases)
-// export * from './services';
+// Services
+export { apiService, setStorageAdapter } from './services/api';
+export type { ApiService } from './services/api';
+export { databaseService } from './services/databaseService';
+export { googleSignInService } from './services/googleSignInService';
+export { imageUploadService, ImageUploadService } from './services/imageUploadService';
+export type { ImageUploadService as ImageUploadServiceType } from './services/imageUploadService';
+export { LocationProvider, useLocation, formatLocationString, getMapboxCoordinates } from './services/LocationService';
+export type { LocationData, LocationContextType } from './services/LocationService';
+export { unitsApiService } from './services/UnitsApiService';
 
-// Hooks exports (will be added in next phases)
-// export * from './hooks';
+// Hooks exports
+export { useUnits } from './hooks/useUnits';
+export { useAuth } from './hooks/useAuth';
 
 // Contexts exports (will be added in next phases)
 // export * from './contexts';

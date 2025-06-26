@@ -68,9 +68,9 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.background,
   },
   tabText: {
-    fontSize: theme.typography.fontSizes.sm,
+    fontSize: theme.typography.sm,
     color: theme.colors.textSecondary,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontWeight: theme.typography.medium,
   },
   activeTabText: {
     color: theme.colors.primary,

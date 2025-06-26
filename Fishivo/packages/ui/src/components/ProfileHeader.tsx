@@ -2,7 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import UserDisplayName from './UserDisplayName';
 import ProBadge from './ProBadge';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 interface ProfileHeaderProps {
   name: string;

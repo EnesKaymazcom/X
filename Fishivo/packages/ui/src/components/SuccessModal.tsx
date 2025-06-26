@@ -2,7 +2,7 @@ import React from 'react';
 import { Modal, View, Text, StyleSheet } from 'react-native';
 import Icon from './Icon';
 import Button from './Button';
-import { theme } from '../theme/index';
+import { theme } from '@fishivo/shared';
 
 interface SuccessModalProps {
   visible: boolean;

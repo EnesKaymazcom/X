@@ -78,20 +78,20 @@ const styles = StyleSheet.create({
     padding: theme.spacing.md,
   },
   name: {
-    fontSize: theme.typography.fontSizes.sm,
-    fontWeight: theme.typography.fontWeights.semibold,
+    fontSize: theme.typography.sm,
+    fontWeight: theme.typography.semibold,
     color: theme.colors.text,
     marginBottom: theme.spacing.xs,
   },
   category: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.textSecondary,
     marginBottom: theme.spacing.xs,
   },
   brand: {
-    fontSize: theme.typography.fontSizes.xs,
+    fontSize: theme.typography.xs,
     color: theme.colors.primary,
-    fontWeight: theme.typography.fontWeights.medium,
+    fontWeight: theme.typography.medium,
   },
 });
 
