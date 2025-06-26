@@ -179,8 +179,8 @@ Bu kurallara sıkı sıkıya uyarak migration işlemini başlat.
 - ✅ apps/mobile/src/screens/NotificationSettingsScreen.tsx oluştur
 - ✅ apps/mobile/src/screens/NotificationsScreen.tsx oluştur
 - ✅ apps/mobile/src/screens/PostDetailScreen.tsx oluştur
-- apps/mobile/src/screens/ProDemoScreen.tsx oluştur
-- apps/mobile/src/screens/SettingsScreen.tsx oluştur
+- ✅ apps/mobile/src/screens/ProDemoScreen.tsx oluştur
+- ✅ apps/mobile/src/screens/SettingsScreen.tsx oluştur
 - apps/mobile/src/screens/UnitsSettingsScreen.tsx oluştur
 - apps/mobile/src/screens/UserProfileScreen.tsx oluştur
 - apps/mobile/src/screens/YourMapScreen.tsx oluştur
