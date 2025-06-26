@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema renkleri tailwind.config.ts dosyasından alınmaktadır */
+:root {
+  --primary: #6419E6;
+  --primary-focus: #5113B8;
+  --secondary: #E11D48;
+  --secondary-focus: #BE123C;
+  --accent: #F59E0B;
+  --accent-focus: #D97706;
+  --neutral: #1F2937;
+  --neutral-focus: #111827;
+  --base-100: #050505; /* Daha koyu siyah arkaplan */
+  --base-200: #0A0A0A; /* Biraz daha açık siyah */
+  --base-300: #101010; /* Daha da açık siyah */
+  --base-content: #E5E7EB;
+}
+
+@layer base {
+  html {
+    @apply bg-base-100 text-base-content;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-medium;
+  }
+
+  .card {
+    @apply overflow-hidden;
+  }
+
+  .badge {
+    @apply font-medium;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.2);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.8);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes blob-slow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(50px, -80px) scale(1.1);
+  }
+  66% {
+    transform: translate(-40px, 40px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-blob-slow {
+  animation: blob-slow 25s infinite;
+}
+
+
+
+/* Dark theme overrides */
+[data-theme="nesdesign"] {
+  background-color: var(--base-100);
+  color: var(--base-content);
+}
+
+[data-theme="nesdesign"] .bg-base-100 {
+  background-color: var(--base-100);
+}
+
+[data-theme="nesdesign"] .bg-base-200 {
+  background-color: var(--base-200);
+}
+
+[data-theme="nesdesign"] .bg-base-300 {
+  background-color: var(--base-300);
+}
+
+[data-theme="nesdesign"] .text-base-content {
+  color: var(--base-content);
+}
+
+[data-theme="nesdesign"] .text-gray-600 {
+  color: var(--base-content);
+  opacity: 0.8;
+}
+
+[data-theme="nesdesign"] .btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+[data-theme="nesdesign"] .btn-primary:hover {
+  background-color: var(--primary-focus);
+}
+
+[data-theme="nesdesign"] .btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+[data-theme="nesdesign"] .btn-secondary:hover {
+  background-color: var(--secondary-focus);
+}
+
+[data-theme="nesdesign"] .text-primary {
+  color: var(--primary);
+}
+
+[data-theme="nesdesign"] .text-secondary {
+  color: var(--secondary);
+}
+
+[data-theme="nesdesign"] .border-primary {
+  border-color: var(--primary);
+}
+
+[data-theme="nesdesign"] .border-secondary {
+  border-color: var(--secondary);
+}
+
+[data-theme="nesdesign"] .badge-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+[data-theme="nesdesign"] .badge-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+[data-theme="nesdesign"] .badge-outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
