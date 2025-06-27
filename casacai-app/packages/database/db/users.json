@@ -1,0 +1,10 @@
+
+[
+  {
+    "id": "user_001",
+    "email": "test@casacai.com",
+    "name": "Enes Arji",
+    "password": "password123", 
+    "loyaltyPoints": 42
+  }
+]

@@ -1,25 +1,20 @@
 {
-  "name": "kitchen-sink",
+  "name": "fishivo-turborepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "clean": "turbo run clean",
     "dev": "turbo run dev",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
     "prettier": "^3.6.0",
-    "turbo": "^2.5.4"
+    "turbo": "^2.5.4",
+    "typescript": "5.8.2"
   },
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
-  },
-  "packageManager": "yarn@1.22.22",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }

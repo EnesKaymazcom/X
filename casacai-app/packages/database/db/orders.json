@@ -1,0 +1,20 @@
+
+[
+  {
+    "id": "order_001",
+    "userId": "user_001",
+    "items": [
+      {
+        "productId": "prod_001",
+        "quantity": 1
+      },
+      {
+        "productId": "prod_004",
+        "quantity": 2
+      }
+    ],
+    "totalAmount": 350,
+    "date": "2025-06-20T14:30:00Z",
+    "status": "Tamamlandı"
+  }
+]

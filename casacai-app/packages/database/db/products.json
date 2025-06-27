@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": "prod_001",
+    "name": "Orijinal Acai Bowl",
+    "description": "Taze muz, çilek ve granola ile servis edilen klasik acai bowl.",
+    "price": 150,
+    "category": "Acai Bowls",
+    "image": "https://images.squarespace-cdn.com/content/v1/6220f11853dande78b583a75/1646326016363-13S1YQP6X0N2S4T0S4T0/Acai-Classic-Bowl.jpg"
+  },
+  {
+    "id": "prod_002",
+    "name": "Protein Power Bowl",
+    "description": "Fıstık ezmesi, badem ve chia tohumu ile zenginleştirilmiş protein dolu bir bowl.",
+    "price": 180,
+    "category": "Acai Bowls",
+    "image": "https://images.squarespace-cdn.com/content/v1/6220f11853dande78b583a75/1646326016363-13S1YQP6X0N2S4T0S4T0/Acai-Classic-Bowl.jpg"
+  },
+  {
+    "id": "prod_003",
+    "name": "Yeşil Detoks Smoothie",
+    "description": "Ispanak, salatalık, elma ve zencefil ile hazırlanan ferahlatıcı smoothie.",
+    "price": 130,
+    "category": "Smoothies",
+    "image": "https://images.squarespace-cdn.com/content/v1/6220f11853dande78b583a75/1646326016363-13S1YQP6X0N2S4T0S4T0/Acai-Classic-Bowl.jpg"
+  },
+  {
+    "id": "prod_004",
+    "name": "Çilekli Limonata",
+    "description": "Taze çilek ve ev yapımı limonata.",
+    "price": 100,
+    "category": "İçecekler",
+    "image": "https://images.squarespace-cdn.com/content/v1/6220f11853dande78b583a75/1646326016363-13S1YQP6X0N2S4T0S4T0/Acai-Classic-Bowl.jpg"
+  }
+]
