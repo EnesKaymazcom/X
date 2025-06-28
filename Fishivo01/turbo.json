@@ -1,0 +1,33 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "android": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "android/**", "!android/app/build/**"],
+      "outputs": ["android/app/build/**"],
+      "cache": false
+    },
+    "ios": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "ios/**", "!ios/build/**"],
+      "outputs": ["ios/build/**"],
+      "cache": false
+    }
+  }
+}
