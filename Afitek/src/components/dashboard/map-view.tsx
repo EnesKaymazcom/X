@@ -106,7 +106,7 @@ export function MapView() {
           'color': '#ffffff',
           'horizon-blend': 0.1,
           'star-intensity': 0.15
-        } as mapboxgl.Fog)
+        } as any)
       })
 
       // Harita yüklendiğinde

@@ -161,13 +161,15 @@ export default function AlertsPage() {
           <div className="flex justify-between items-center">
             <CardTitle>Uyarı Listesi</CardTitle>
             <div className="flex items-center space-x-2">
-              <Input
-                placeholder="Uyarı ara..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-64"
-                prefix={<Search className="h-4 w-4" />}
-              />
+              <div className="relative w-64">
+                <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  placeholder="Uyarı ara..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="pl-8"
+                />
+              </div>
               <Select value={filter} onValueChange={setFilter}>
                 <SelectTrigger className="w-32">
                   <SelectValue />
