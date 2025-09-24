@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Logo } from "@/components/logo";
 import {
@@ -59,7 +58,7 @@ export default function Home() {
   return (
     <>
       {/* Navigation */}
-      <Navbar className="fixed top-0 left-0 right-0">
+      <Navbar className="fixed top-0 left-0 right-0 z-50">
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
@@ -136,10 +135,10 @@ export default function Home() {
             <div className="flex justify-center mb-8">
               <Logo className="w-64 h-64 animate-pulse" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold">
-              Building Tomorrow&apos;s SaaS Solutions
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text text-transparent">
+              Next-Generation SaaS Development
             </h1>
-            <p className="text-xl md:text-2xl opacity-60 max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl opacity-70 max-w-2xl mx-auto">
               Modern SaaS solutions for growing businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -161,7 +160,7 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="h-6 w-6 opacity-40" />
+            <ChevronDown className="h-6 w-6 opacity-50 text-accent" />
           </div>
         </div>
       </section>
@@ -196,37 +195,37 @@ export default function Home() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-foreground/30">
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 glass-card border-border/20">
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <div className="p-2 border border-foreground rounded-lg">
-                    <Globe className="h-6 w-6" />
+                  <div className="p-2 bg-accent/10 rounded-lg backdrop-blur-sm">
+                    <img src="/vectorwitch-logo.svg" alt="VectorWitch" className="h-6 w-6 dark:invert" />
                   </div>
                   <ExternalLink className="h-4 w-4 opacity-60 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <CardTitle>VectorWitch</CardTitle>
-                <CardDescription className="opacity-60">Analytics Platform</CardDescription>
+                <CardDescription className="opacity-60">AI SVG Generator</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm opacity-70 mb-4">
-                  Data analytics and visualization platform with custom dashboards and reporting features.
+                  AI-powered SVG generation platform that transforms text prompts and images into scalable vector graphics.
                 </p>
                 <Link href="https://vectorwitch.com" target="_blank">
-                  <Button variant="outline" size="sm" className="w-full border-foreground hover:bg-foreground hover:text-background">
-                    Explore Platform
+                  <Button variant="outline" size="sm" className="w-full border-border/40 hover:bg-accent/10 hover:border-accent/40 backdrop-blur-sm">
+                    Visit Platform
                     <ArrowRight className="ml-2 h-3 w-3" />
                   </Button>
                 </Link>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-foreground/30">
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 glass-card border-border/20">
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <div className="p-2 border border-foreground rounded-lg">
+                  <div className="p-2 bg-accent/10 rounded-lg backdrop-blur-sm">
                     <Rocket className="h-6 w-6" />
                   </div>
-                  <span className="text-xs border border-foreground px-2 py-1 rounded-full">
+                  <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full backdrop-blur-sm">
                     Coming Soon
                   </span>
                 </div>
@@ -237,19 +236,19 @@ export default function Home() {
                 <p className="text-sm opacity-70 mb-4">
                   Process automation tool to streamline business workflows and improve productivity.
                 </p>
-                <Button variant="outline" size="sm" className="w-full border-foreground" disabled>
+                <Button variant="outline" size="sm" className="w-full border-border/40 opacity-50" disabled>
                   Coming Soon
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-foreground/30">
+            <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 glass-card border-border/20">
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <div className="p-2 border border-foreground rounded-lg">
+                  <div className="p-2 bg-accent/10 rounded-lg backdrop-blur-sm">
                     <Shield className="h-6 w-6" />
                   </div>
-                  <span className="text-xs border border-foreground px-2 py-1 rounded-full">
+                  <span className="text-xs bg-accent/10 text-accent px-2 py-1 rounded-full backdrop-blur-sm">
                     Beta
                   </span>
                 </div>
@@ -260,7 +259,7 @@ export default function Home() {
                 <p className="text-sm opacity-70 mb-4">
                   Security management platform with encryption and threat detection capabilities.
                 </p>
-                <Button variant="outline" size="sm" className="w-full border-foreground" disabled>
+                <Button variant="outline" size="sm" className="w-full border-border/40 opacity-50" disabled>
                   Beta Access
                 </Button>
               </CardContent>
@@ -282,7 +281,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="text-center space-y-4 group">
-              <div className="inline-flex p-4 border-2 border-foreground rounded-2xl group-hover:bg-foreground group-hover:text-background transition-all">
+              <div className="inline-flex p-4 bg-accent/10 rounded-2xl group-hover:bg-accent/20 transition-all backdrop-blur-sm">
                 <Rocket className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold">Innovation</h3>
@@ -291,7 +290,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center space-y-4 group">
-              <div className="inline-flex p-4 border-2 border-foreground rounded-2xl group-hover:bg-foreground group-hover:text-background transition-all">
+              <div className="inline-flex p-4 bg-accent/10 rounded-2xl group-hover:bg-accent/20 transition-all backdrop-blur-sm">
                 <Shield className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold">Security</h3>
@@ -300,7 +299,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center space-y-4 group">
-              <div className="inline-flex p-4 border-2 border-foreground rounded-2xl group-hover:bg-foreground group-hover:text-background transition-all">
+              <div className="inline-flex p-4 bg-accent/10 rounded-2xl group-hover:bg-accent/20 transition-all backdrop-blur-sm">
                 <Globe className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold">UK Based</h3>
@@ -309,7 +308,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center space-y-4 group">
-              <div className="inline-flex p-4 border-2 border-foreground rounded-2xl group-hover:bg-foreground group-hover:text-background transition-all">
+              <div className="inline-flex p-4 bg-accent/10 rounded-2xl group-hover:bg-accent/20 transition-all backdrop-blur-sm">
                 <Headphones className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold">Support</h3>
@@ -350,17 +349,17 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30">
+      <section id="contact" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
               <p className="text-xl opacity-60">
-                Ready to start your next project? Let's discuss your needs.
+                Ready to start your next project? Let&apos;s discuss your needs.
               </p>
             </div>
 
-            <Card className="border-foreground/30">
+            <Card className="glass-card border-border/20">
               <CardContent className="p-8">
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
@@ -369,7 +368,7 @@ export default function Home() {
                       <Input
                         id="firstName"
                         placeholder="John"
-                        className="border-foreground/20 focus:border-foreground"
+                        className="border-border/40 focus:border-accent backdrop-blur-sm"
                       />
                     </div>
                     <div className="space-y-2">
@@ -377,7 +376,7 @@ export default function Home() {
                       <Input
                         id="lastName"
                         placeholder="Doe"
-                        className="border-foreground/20 focus:border-foreground"
+                        className="border-border/40 focus:border-accent backdrop-blur-sm"
                       />
                     </div>
                   </div>
@@ -401,15 +400,6 @@ export default function Home() {
                     />
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      placeholder="Tell us about your project..."
-                      rows={5}
-                      className="border-foreground/20 focus:border-foreground resize-none"
-                    />
-                  </div>
 
                   <Button
                     type="submit"
@@ -446,12 +436,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-background">
-        <div className="container mx-auto px-4 pt-8 pb-3">
+      <footer className="relative backdrop-blur-md border-t border-border/20">
+        <div className="max-w-7xl mx-auto px-6 pt-8 pb-3">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <Logo className="w-8 h-8" />
+                <Logo className="w-10 h-10" />
                 <span className="text-xl font-bold">Vector X</span>
               </div>
               <p className="text-sm opacity-60">
@@ -494,12 +484,12 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:opacity-100 transition-opacity">
+                  <Link href="/privacy" className="hover:opacity-100 transition-opacity">
                     Privacy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:opacity-100 transition-opacity">
+                  <Link href="/terms" className="hover:opacity-100 transition-opacity">
                     Terms
                   </Link>
                 </li>
@@ -523,13 +513,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-4 pt-3 border-t border-foreground/20">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-0.5 md:space-y-0">
-              <p className="text-xs opacity-60">
+          <div className="mt-8 pt-8 border-t border-white/20 dark:border-white/20">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-2">
+              <p className="text-xs opacity-60 text-center md:text-left">
                 © {new Date().getFullYear()} Vector X Ltd. All rights reserved.
               </p>
-              <p className="text-xs opacity-60">
-                Registered in England and Wales. Company No. 12345678
+              <p className="text-xs opacity-60 text-center md:text-right">
+                Registered in England and Wales. Company No. 16739534
               </p>
             </div>
           </div>

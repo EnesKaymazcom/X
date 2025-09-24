@@ -1,0 +1,81 @@
+{
+  "title": "Bildirimler",
+  "markAllRead": "Tümünü Okundu İşaretle",
+  "filters": {
+    "all": "Tümü",
+    "unread": "Okunmamış",
+    "social": "Sosyal",
+    "system": "Sistem"
+  },
+  "timeAgo": {
+    "now": "Şimdi",
+    "minutes": "{{count}} dk önce",
+    "hours": "{{count}} saat önce",
+    "days": "{{count}} gün önce"
+  },
+  "empty": {
+    "title": "Bildirim Yok",
+    "description": "Henüz hiç bildiriminiz bulunmuyor"
+  },
+  "types": {
+    "like": "Beğeni",
+    "comment": "Yorum",
+    "follow": "Takip",
+    "post": "Gönderi",
+    "system": "Sistem",
+    "catch": "Av",
+    "location": "Konum"
+  },
+  "actions": {
+    "delete": "Sil"
+  },
+  "errors": {
+    "loadFailed": "Bildirimler yüklenirken hata oluştu"
+  },
+  "settings": {
+    "title": "Bildirim Ayarları",
+    "socialNotifications": "Sosyal Bildirimler",
+    "systemNotifications": "Sistem Bildirimleri",
+    "likes": "Beğeniler",
+    "likesDesc": "Avlarınız beğenildiğinde bildirim al",
+    "comments": "Yorumlar",
+    "commentsDesc": "Avlarınıza yorum yapıldığında bildirim al",
+    "newFollowers": "Yeni Takipçiler",
+    "newFollowersDesc": "Sizi takip eden yeni kullanıcılar için bildirim al",
+    "mentions": "Etiketlenmeler",
+    "mentionsDesc": "Bir gönderide etiketlendiğinizde bildirim al",
+    "newSpots": "Yeni Spot Noktaları",
+    "newSpotsDesc": "Yakınınızda yeni spot noktaları eklendiğinde bildirim al",
+    "weather": "Hava Durumu",
+    "weatherDesc": "Balıkçılık için uygun hava koşulları hakkında bildirim al",
+    "appUpdates": "Uygulama Güncellemeleri",
+    "appUpdatesDesc": "Yeni özellikler ve güncellemeler hakkında bildirim al",
+    "marketing": "Pazarlama",
+    "marketingDesc": "Özel teklifler ve kampanyalar hakkında bildirim al",
+    "pushNotifications": "Push Bildirimleri",
+    "emailNotifications": "E-posta Bildirimleri",
+    "categories": {
+      "social": "Sosyal",
+      "likes": "Beğeniler",
+      "comments": "Yorumlar", 
+      "follows": "Takipçiler",
+      "posts": "Gönderiler",
+      "system": "Sistem",
+      "updates": "Güncellemeler",
+      "security": "Güvenlik"
+    },
+    "frequency": {
+      "title": "Bildirim Sıklığı",
+      "instant": "Anında",
+      "hourly": "Saatlik",
+      "daily": "Günlük",
+      "weekly": "Haftalık"
+    },
+    "quietHours": {
+      "title": "Sessiz Saatler",
+      "enabled": "Aktif",
+      "from": "Başlangıç",
+      "to": "Bitiş"
+    }
+  }
+}

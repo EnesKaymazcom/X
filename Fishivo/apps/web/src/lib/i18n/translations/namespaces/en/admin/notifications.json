@@ -1,0 +1,36 @@
+{
+  "title": "Notification Management",
+  "pageTitle": "Notification Management | Fishivo Admin",
+  "sendNew": "Send New Notification",
+  "templates": "Templates",
+  "history": "History",
+  "scheduled": "Scheduled",
+  "filters": {
+    "type": "Notification Type",
+    "allTypes": "All Types",
+    "system": "System",
+    "marketing": "Marketing",
+    "update": "Update",
+    "alert": "Alert",
+    "status": "Status",
+    "sent": "Sent",
+    "pending": "Pending",
+    "failed": "Failed"
+  },
+  "form": {
+    "title": "Notification Title",
+    "message": "Notification Message",
+    "targetAudience": "Target Audience",
+    "allUsers": "All Users",
+    "activeUsers": "Active Users",
+    "proUsers": "Pro Users",
+    "specificUsers": "Specific Users",
+    "sendVia": "Send Via",
+    "push": "Push Notification",
+    "email": "Email",
+    "inApp": "In-App",
+    "schedule": "Schedule",
+    "sendNow": "Send Now",
+    "scheduleLater": "Schedule for Later"
+  }
+}

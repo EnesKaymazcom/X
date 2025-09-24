@@ -1,0 +1,171 @@
+{
+  "title": "Arama",
+  "pageTitle": "Arama Sonuçları | Fishivo",
+  "searchPlaceholder": "Ara...",
+  "searchFor": "Arama terimi:",
+  "resultsFor": "Arama sonuçları:",
+  "noResults": "Sonuç bulunamadı",
+  "noResultsDescription": "Arama kriterlerinizi değiştirerek tekrar deneyin",
+  "searchSuggestions": "Arama Önerileri",
+  "recentSearches": "Son Aramalar",
+  "popularSearches": "Popüler Aramalar",
+  "clearHistory": "Geçmişi Temizle",
+  "filters": {
+    "title": "Filtreler",
+    "all": "Tümü",
+    "users": "Kullanıcılar",
+    "posts": "Gönderiler",
+    "spots": "Spotlar",
+    "species": "Balık Türleri",
+    "equipment": "Ekipmanlar",
+    "groups": "Gruplar",
+    "events": "Etkinlikler",
+    "articles": "Makaleler"
+  },
+  "sortBy": {
+    "title": "Sıralama",
+    "relevance": "İlgililik",
+    "newest": "En Yeni",
+    "oldest": "En Eski",
+    "popular": "Popüler",
+    "rating": "Değerlendirme",
+    "distance": "Mesafe",
+    "alphabetical": "Alfabetik"
+  },
+  "timeFilter": {
+    "title": "Zaman",
+    "anytime": "Her Zaman",
+    "lastHour": "Son 1 Saat",
+    "last24Hours": "Son 24 Saat",
+    "lastWeek": "Son Hafta",
+    "lastMonth": "Son Ay",
+    "lastYear": "Son Yıl"
+  },
+  "locationFilter": {
+    "title": "Konum",
+    "anywhere": "Her Yer",
+    "nearMe": "Yakınımda",
+    "myCity": "Şehrimde",
+    "myCountry": "Ülkemde",
+    "custom": "Özel Konum"
+  },
+  "results": {
+    "showing": "Gösterilen",
+    "of": "/",
+    "results": "sonuç",
+    "found": "bulundu",
+    "loadMore": "Daha Fazla Yükle",
+    "noMore": "Daha fazla sonuç yok"
+  },
+  "categories": {
+    "users": {
+      "title": "Kullanıcılar",
+      "followers": "takipçi",
+      "following": "takip",
+      "posts": "gönderi",
+      "verified": "Doğrulanmış",
+      "pro": "Pro Üye",
+      "follow": "Takip Et",
+      "unfollow": "Takibi Bırak",
+      "message": "Mesaj Gönder",
+      "viewProfile": "Profili Görüntüle"
+    },
+    "posts": {
+      "title": "Gönderiler",
+      "likes": "beğeni",
+      "comments": "yorum",
+      "shares": "paylaşım",
+      "species": "Tür",
+      "location": "Konum",
+      "date": "Tarih",
+      "viewPost": "Gönderiyi Görüntüle",
+      "like": "Beğen",
+      "comment": "Yorum Yap",
+      "share": "Paylaş"
+    },
+    "spots": {
+      "title": "Spotlar",
+      "rating": "Puan",
+      "reviews": "değerlendirme",
+      "distance": "Mesafe",
+      "waterType": "Su Tipi",
+      "facilities": "Olanaklar",
+      "viewSpot": "Spotu Görüntüle",
+      "getDirections": "Yol Tarifi",
+      "addToFavorites": "Favorilere Ekle"
+    },
+    "species": {
+      "title": "Balık Türleri",
+      "scientificName": "Bilimsel Adı",
+      "habitat": "Yaşam Alanı",
+      "averageSize": "Ortalama Boy",
+      "difficulty": "Zorluk",
+      "viewSpecies": "Türü Görüntüle",
+      "addToWishlist": "İstek Listesine Ekle"
+    },
+    "equipment": {
+      "title": "Ekipmanlar",
+      "brand": "Marka",
+      "price": "Fiyat",
+      "rating": "Değerlendirme",
+      "availability": "Stok",
+      "category": "Kategori",
+      "viewProduct": "Ürünü Görüntüle",
+      "addToCart": "Sepete Ekle",
+      "compare": "Karşılaştır"
+    }
+  },
+  "advanced": {
+    "title": "Gelişmiş Arama",
+    "exactPhrase": "Tam ifade",
+    "anyWords": "Herhangi bir kelime",
+    "excludeWords": "Bu kelimeleri hariç tut",
+    "language": "Dil",
+    "fileType": "Dosya Türü",
+    "domain": "Site",
+    "dateRange": "Tarih Aralığı",
+    "from": "Başlangıç",
+    "to": "Bitiş"
+  },
+  "suggestions": {
+    "didYouMean": "Bunu mu demek istediniz:",
+    "relatedSearches": "İlgili Aramalar",
+    "trending": "Trend Olan",
+    "trySearching": "Şunları aramayı deneyin:",
+    "fishNames": "Balık isimleri",
+    "locations": "Lokasyonlar",
+    "techniques": "Teknikler",
+    "equipment": "Ekipman türleri"
+  },
+  "savedSearches": {
+    "title": "Kayıtlı Aramalar",
+    "save": "Aramayı Kaydet",
+    "saved": "Arama Kaydedildi",
+    "delete": "Sil",
+    "rename": "Yeniden Adlandır",
+    "alert": "Yeni sonuçlar için bildirim al",
+    "empty": "Kayıtlı aramanız yok"
+  },
+  "quickActions": {
+    "searchNearby": "Yakınımda Ara",
+    "searchRecent": "Son Aramalar",
+    "searchTrending": "Trend Olanlar",
+    "searchByPhoto": "Fotoğrafla Ara",
+    "voiceSearch": "Sesli Arama"
+  },
+  "errors": {
+    "searchFailed": "Arama yapılamadı",
+    "noConnection": "İnternet bağlantısı yok",
+    "serverError": "Sunucu hatası",
+    "tooManyRequests": "Çok fazla istek",
+    "invalidQuery": "Geçersiz arama terimi"
+  },
+  "tips": {
+    "title": "Arama İpuçları",
+    "useQuotes": "Tam ifade aramak için tırnak işareti kullanın",
+    "useWildcard": "Joker karakter için * kullanın",
+    "useExclude": "Kelime hariç tutmak için - kullanın",
+    "useOr": "Alternatifler için OR kullanın",
+    "useFilters": "Sonuçları daraltmak için filtreleri kullanın"
+  }
+}

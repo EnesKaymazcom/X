@@ -1,0 +1,19 @@
+{
+  "detail": {
+    "title": "Spot Detayı",
+    "depth": "Derinlik",
+    "speciesCaught": "Bu Spotta Yakalanan Balıklar",
+    "species": "tür",
+    "catches": "yakalama",
+    "lastCaught": "Son yakalama",
+    "noSpeciesYet": "Henüz balık yakalanmamış",
+    "beFirstToCatch": "Bu spotta balık yakalayan ilk kişi ol!",
+    "addCatch": "Av Ekle",
+    "deleteTitle": "Spot'u Sil",
+    "deleteMessage": "Bu spot'u silmek istediğinizden emin misiniz?"
+  },
+  "waterType": {
+    "freshwater": "Tatlı Su",
+    "saltwater": "Tuzlu Su"
+  }
+}

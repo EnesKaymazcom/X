@@ -1,0 +1,107 @@
+{
+  "title": "Spot Ekle",
+  "editTitle": "Spot Düzenle",
+  "save": "Kaydet",
+  "update": "Güncelle",
+  "sections": {
+    "spotInfo": "Spot Bilgileri",
+    "spotName": "Spot Adı",
+    "spotNamePlaceholder": "Örn: Tahta İskele Yanı",
+    "location": "Konum",
+    "locationPlaceholder": "Konum seçin veya GPS kullanın",
+    "description": "Açıklama",
+    "descriptionPlaceholder": "Bu spot hakkında bilgi verin (opsiyonel)",
+    "depth": "Yaklaşık Derinlik ({{unit}})",
+    "depthPlaceholder": "Örn: {{example}}",
+    "waterType": "Su Tipi",
+    "waterTypePlaceholder": "Su tipi seçin",
+    "selectWaterType": "Su Tipi Seç",
+    "spotType": "Spot Tipi",
+    "spotTypePlaceholder": "Spot tipi seçin",
+    "selectSpotType": "Spot Tipi Seç",
+    "depthMin": "Min. Derinlik ({{unit}})",
+    "depthMinPlaceholder": "Örn: {{example}}",
+    "depthMax": "Maks. Derinlik ({{unit}})",
+    "depthMaxPlaceholder": "Örn: {{example}}",
+    "bottomType": "Zemin Tipi",
+    "bottomTypePlaceholder": "Zemin tipi seçin",
+    "selectBottomType": "Zemin Tipi Seç",
+    "facilities": "Tesisler",
+    "facilitiesPlaceholder": "Tesis seçin",
+    "selectFacilities": "Tesisler Seç",
+    "accessType": "Erişim Tipi",
+    "accessTypePlaceholder": "Erişim tipi seçin",
+    "selectAccessType": "Erişim Tipi Seç",
+    "privacy": "Gizlilik",
+    "privateSpot": "Gizli Spot",
+    "privateSpotTitle": "Gizli Spot",
+    "privateSpotDescription": "Bu spotu sadece sen görebilirsin",
+    "approvalInfo": "Eklediğin spot onaylandıktan sonra haritada görünür olacaktır.",
+    "photo": "Fotoğraf",
+    "addPhoto": "Fotoğraf Ekle",
+    "photoOptional": "(Opsiyonel)",
+    "maxPhotos": "Maksimum 1 fotoğraf",
+    "spotNotSelected": "Konum seçilmedi",
+    "spotSubtext": "Mevcut konumu veya haritayı seçmek için dokunun",
+    "selectImageSource": "Görsel Kaynağı Seç",
+    "takePhoto": "Fotoğraf Çek",
+    "selectFromGallery": "Galeriden Seç",
+    "cropImage": "Görseli Kırp",
+    "choose": "Seç",
+    "changePhoto": "Fotoğrafı Değiştir",
+    "uploading": "Yükleniyor...",
+    "tapToAddLocation": "Konum eklemek için dokunun"
+  },
+  "actions": {
+    "currentLocation": "Mevcut Konum",
+    "selectFromMap": "Haritadan Seç",
+    "removePhoto": "Fotoğrafı kaldır"
+  },
+  "validation": {
+    "missingInfo": "Eksik Bilgi",
+    "requiredFields": "Lütfen spot adı ve konum bilgilerini girin.",
+    "nameRequired": "Spot adı zorunludur",
+    "waterTypeRequired": "Su tipi seçimi zorunludur",
+    "locationRequired": "Lütfen haritadan konum seçin ve onaylayın"
+  },
+  "success": {
+    "saved": "Spot başarıyla kaydedildi!",
+    "updated": "Spot başarıyla güncellendi!",
+    "info": "Bilgi"
+  },
+  "premium": {
+    "title": "Premium Özellik",
+    "privateSpotFeature": "Özel spot özelliği sadece Premium üyeler içindir.",
+    "upgrade": "Premium'a Yükselt",
+    "later": "Daha Sonra"
+  },
+  "map": {
+    "title": "Spot Konumu Seç",
+    "select": "Seç",
+    "confirmLocation": "Konumu Onayla",
+    "locationConfirmed": "✓ Konum Onaylandı"
+  },
+  "waterType": {
+    "freshwater": "Tatlı Su",
+    "saltwater": "Tuzlu Su"
+  },
+  "uploadingImage": "Fotoğraf Yükleniyor",
+  "pleaseWait": "Lütfen bekleyin...",
+  "errors": {
+    "nameRequired": "Spot adı zorunludur",
+    "waterTypeRequired": "Su tipi seçimi zorunludur",
+    "saveFailed": "Spot kaydedilemedi. Lütfen tekrar deneyin.",
+    "locationRequired": "Konum seçimi zorunludur",
+    "createFailed": "Spot oluşturulamadı. Lütfen tekrar deneyin.",
+    "cameraError": "Kamera açılırken hata oluştu",
+    "galleryError": "Galeri açılırken hata oluştu",
+    "locationError": "Konum alınırken hata oluştu",
+    "nameTooShort": "Spot adı en az 3 karakter olmalıdır",
+    "invalidDepth": "Geçersiz derinlik değeri",
+    "authRequired": "Bu işlem için giriş yapmalısınız",
+    "proRequired": "Spot ekleme özelliği sadece Pro üyeler içindir. Premium'a yükseltmek ister misiniz?"
+  },
+  "messages": {
+    "spotCreated": "Spot başarıyla oluşturuldu!"
+  }
+}

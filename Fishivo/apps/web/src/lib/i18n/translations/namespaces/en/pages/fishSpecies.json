@@ -1,0 +1,135 @@
+{
+  "title": "Fish Species",
+  "pageTitle": "Fish Species | Fishivo",
+  "searchPlaceholder": "Search fish species...",
+  "noResults": "No results found",
+  "tryDifferentSearch": "Try a different search term",
+  "popularSpecies": "Popular Species",
+  "allSpecies": "All Species",
+  "loadingSpecies": "Loading fish species...",
+  "errorLoadingSpecies": "Error occurred while loading fish species",
+  "speciesNotFound": "Fish species not found",
+  "backToSpecies": "Back to Fish Species",
+  "wantToKnowMoreAboutSpecies": "Want to see and use all features?",
+  
+  "filters": {
+    "filterByHabitat": "Filter by Habitat",
+    "filterByWaterType": "Filter by Water Type",
+    "filterBySize": "Filter by Size",
+    "all": "All",
+    "saltwater": "Saltwater",
+    "freshwater": "Freshwater",
+    "brackish": "Brackish Water",
+    "small": "Small (0-30cm)",
+    "medium": "Medium (30-80cm)",
+    "large": "Large (80cm+)"
+  },
+  
+  "waterTypes": {
+    "saltwater": "Saltwater",
+    "freshwater": "Freshwater",
+    "brackish": "Brackish Water"
+  },
+  
+  "habitats": {
+    "coastal": "Coastal",
+    "rocky": "Rocky",
+    "sandy": "Sandy",
+    "muddy": "Muddy",
+    "openSea": "Open Sea",
+    "deepSea": "Deep Sea",
+    "river": "River",
+    "lake": "Lake",
+    "lagoon": "Lagoon",
+    "reef": "Reef",
+    "estuary": "Estuary"
+  },
+  
+  "seasons": {
+    "spring": "Spring",
+    "summer": "Summer",
+    "autumn": "Autumn",
+    "winter": "Winter"
+  },
+  
+  "times": {
+    "morning": "Morning",
+    "noon": "Noon",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "night": "Night"
+  },
+  
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "expert": "Expert"
+  },
+  
+  "status": {
+    "active": "Active",
+    "protected": "Protected",
+    "endangered": "Endangered"
+  },
+  
+  "details": {
+    "basicInfo": "Basic Information",
+    "physicalCharacteristics": "Physical Characteristics",
+    "scientificName": "Scientific Name",
+    "commonNames": "Common Names",
+    "family": "Family",
+    "habitat": "Habitat",
+    "waterType": "Water Type",
+    "waterTypePreferences": "Water Type Preferences",
+    "averageSize": "Average Size",
+    "averageWeight": "Average Weight",
+    "length": "Length",
+    "weight": "Weight",
+    "depthRange": "Depth Range",
+    "depth": "Depth",
+    "difficultyLevel": "Difficulty Level",
+    "conservationStatus": "Conservation Status",
+    "description": "Description",
+    "generalInfo": "General Information",
+    "fishingTips": "Fishing Tips",
+    "fishingAdvice": "Fishing Advice",
+    "bestSeason": "Best Season",
+    "fishingSeason": "Fishing Season",
+    "bestFishingTimes": "Best Fishing Times",
+    "bestBait": "Best Bait",
+    "recommendedBaits": "Recommended Baits",
+    "techniques": "Techniques",
+    "fishingTechniques": "Fishing Techniques",
+    "regulations": "Legal Regulations",
+    "legalInfo": "Legal Information",
+    "minSize": "Minimum Size",
+    "minLegalSize": "Minimum Legal Size",
+    "bagLimit": "Daily Limit",
+    "dailyLimit": "Daily Limit",
+    "closedSeason": "Closed Season",
+    "seasonalRestrictions": "Seasonal Restrictions",
+    "units": {
+      "cm": "cm",
+      "kg": "kg",
+      "meters": "meters",
+      "pieces": "pieces"
+    },
+    "order": "Order",
+    "maxLength": "Maximum Length",
+    "maxWeight": "Maximum Weight",
+    "feedingHabits": "Feeding Habits",
+    "reproduction": "Reproduction",
+    "conservationInfo": "Conservation Information",
+    "habitatInfo": "Habitat Information",
+    "seasonalInfo": "Seasonal Information",
+    "fishingInfo": "Fishing Information",
+    "spawning": "Spawning Period",
+    "technique": "Technique",
+    "economicValue": "Economic Value",
+    "marketValue": "Market Value",
+    "nutritionalValue": "Nutritional Value",
+    "interestingFacts": "Interesting Facts"
+  },
+  "relatedSpecies": "Related Fish Species"
+}

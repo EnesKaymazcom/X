@@ -1,0 +1,36 @@
+{
+  "title": "Bildirim Yönetimi",
+  "pageTitle": "Bildirim Yönetimi | Fishivo Admin",
+  "sendNew": "Yeni Bildirim Gönder",
+  "templates": "Şablonlar",
+  "history": "Geçmiş",
+  "scheduled": "Zamanlanmış",
+  "filters": {
+    "type": "Bildirim Türü",
+    "allTypes": "Tüm Türler",
+    "system": "Sistem",
+    "marketing": "Pazarlama",
+    "update": "Güncelleme",
+    "alert": "Uyarı",
+    "status": "Durum",
+    "sent": "Gönderildi",
+    "pending": "Beklemede",
+    "failed": "Başarısız"
+  },
+  "form": {
+    "title": "Bildirim Başlığı",
+    "message": "Bildirim Mesajı",
+    "targetAudience": "Hedef Kitle",
+    "allUsers": "Tüm Kullanıcılar",
+    "activeUsers": "Aktif Kullanıcılar",
+    "proUsers": "Pro Kullanıcılar",
+    "specificUsers": "Belirli Kullanıcılar",
+    "sendVia": "Gönderim Yöntemi",
+    "push": "Push Bildirimi",
+    "email": "E-posta",
+    "inApp": "Uygulama İçi",
+    "schedule": "Zamanlama",
+    "sendNow": "Hemen Gönder",
+    "scheduleLater": "Daha Sonra İçin Zamanla"
+  }
+}

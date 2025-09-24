@@ -1,0 +1,111 @@
+{
+  "title": "Ekipman Kataloğu",
+  "pageTitle": "Balıkçılık Ekipmanları | Fishivo",
+  "subtitle": "En iyi balıkçılık ekipmanlarını keşfedin",
+  "searchPlaceholder": "Ekipman ara...",
+  "categories": {
+    "all": "Tümü",
+    "rods": "Oltalar",
+    "reels": "Makineler",
+    "lines": "Misinalar",
+    "lures": "Yemler",
+    "hooks": "İğneler",
+    "accessories": "Aksesuarlar",
+    "tools": "Araçlar",
+    "clothing": "Giyim",
+    "electronics": "Elektronik"
+  },
+  "filters": {
+    "brand": "Marka",
+    "priceRange": "Fiyat Aralığı",
+    "rating": "Değerlendirme",
+    "availability": "Stok Durumu",
+    "features": "Özellikler",
+    "sortBy": "Sıralama",
+    "newest": "En Yeni",
+    "oldest": "En Eski",
+    "priceAsc": "Fiyat (Düşük-Yüksek)",
+    "priceDesc": "Fiyat (Yüksek-Düşük)",
+    "rating": "En Çok Beğenilen",
+    "popular": "Popüler"
+  },
+  "product": {
+    "details": "Ürün Detayları",
+    "specifications": "Teknik Özellikler",
+    "reviews": "Değerlendirmeler",
+    "photos": "Fotoğraflar",
+    "videos": "Videolar",
+    "price": "Fiyat",
+    "availability": "Stok Durumu",
+    "inStock": "Stokta",
+    "outOfStock": "Tükendi",
+    "preOrder": "Ön Sipariş",
+    "addToCart": "Sepete Ekle",
+    "addToWishlist": "İstek Listesine Ekle",
+    "compare": "Karşılaştır",
+    "share": "Paylaş",
+    "description": "Açıklama",
+    "features": "Özellikler",
+    "included": "Kutuda Neler Var",
+    "warranty": "Garanti",
+    "shipping": "Kargo",
+    "returnPolicy": "İade Koşulları"
+  },
+  "reviews": {
+    "title": "Kullanıcı Değerlendirmeleri",
+    "averageRating": "Ortalama Puan",
+    "totalReviews": "Toplam Değerlendirme",
+    "writeReview": "Değerlendirme Yaz",
+    "helpful": "Yardımcı",
+    "notHelpful": "Yardımcı Değil",
+    "verified": "Doğrulanmış Alıcı",
+    "pros": "Artıları",
+    "cons": "Eksileri",
+    "wouldRecommend": "Tavsiye Ederim",
+    "wouldNotRecommend": "Tavsiye Etmem"
+  },
+  "wishlist": {
+    "title": "İstek Listem",
+    "empty": "İstek listeniz boş",
+    "emptyDescription": "Beğendiğiniz ürünleri buraya ekleyebilirsiniz",
+    "addToCart": "Sepete Ekle",
+    "remove": "Kaldır",
+    "share": "Listeyi Paylaş",
+    "total": "Toplam"
+  },
+  "compare": {
+    "title": "Ürün Karşılaştırma",
+    "addProduct": "Ürün Ekle",
+    "removeProduct": "Ürünü Kaldır",
+    "features": "Özellikler",
+    "specifications": "Teknik Özellikler",
+    "pricing": "Fiyatlandırma",
+    "availability": "Stok Durumu",
+    "ratings": "Değerlendirmeler"
+  },
+  "brands": {
+    "title": "Markalar",
+    "all": "Tüm Markalar",
+    "popular": "Popüler Markalar",
+    "new": "Yeni Markalar",
+    "aboutBrand": "Marka Hakkında",
+    "products": "Ürünleri",
+    "website": "Web Sitesi"
+  },
+  "guides": {
+    "title": "Ekipman Rehberleri",
+    "beginnerGuide": "Başlangıç Rehberi",
+    "buyingGuide": "Satın Alma Rehberi",
+    "maintenance": "Bakım Rehberi",
+    "tips": "İpuçları",
+    "articles": "Makaleler"
+  },
+  "messages": {
+    "loading": "Ekipmanlar yükleniyor...",
+    "noResults": "Arama kriterlerinize uygun ekipman bulunamadı",
+    "error": "Ekipmanlar yüklenirken hata oluştu",
+    "addedToCart": "Sepete eklendi",
+    "addedToWishlist": "İstek listesine eklendi",
+    "removedFromWishlist": "İstek listesinden kaldırıldı"
+  }
+}

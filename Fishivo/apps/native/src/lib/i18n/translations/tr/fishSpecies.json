@@ -1,0 +1,185 @@
+{
+  "title": "Balık Türleri",
+  "searchPlaceholder": "Balık türü ara...",
+  "noSpeciesFound": "Balık türü bulunamadı",
+  "speciesNotFound": "Balık türü bulunamadı",
+  "relatedSpecies": "İlgili Türler",
+  "tabs": {
+    "details": "Detaylar",
+    "reviews": "Değerlendirmeler",
+    "catches": "Avlar",
+    "similar": "Benzer Türler",
+    "gear": "Ekipmanlar",
+    "disciplines": "Disiplinler"
+  },
+  "topGear": {
+    "categories": {
+      "all": "Tümü",
+      "rod": "Olta",
+      "reel": "Makara",
+      "line": "Misina",
+      "bait": "Yem",
+      "lure": "Suni Yem",
+      "hook": "İğne"
+    },
+    "recommendations": "kişi kullanıyor",
+    "reviews": "yorum",
+    "emptyState": {
+      "title": "Henüz ekipman bulunamadı",
+      "subtitle": "Bu kategoride ekipman bulunmuyor"
+    }
+  },
+  "details": {
+    "basicInfo": "Temel Bilgiler",
+    "generalInfo": "Genel Bilgi",
+    "physicalCharacteristics": "Fiziksel Özellikler",
+    "habitat": "Yaşam Alanı",
+    "scientificName": "Bilimsel Adı",
+    "commonNames": "Yaygın İsimler",
+    "family": "Familya",
+    "order": "Takım",
+    "waterType": "Su Tipi",
+    "maxLength": "Maksimum Boy",
+    "maxWeight": "Maksimum Ağırlık",
+    "depthRange": "Derinlik Aralığı",
+    "feedingTypes": "Beslenme Tipleri",
+    "conservationStatus": "Koruma Durumu",
+    "noDescriptionAvailable": "Açıklama mevcut değil",
+    "units": {
+      "cm": "cm",
+      "kg": "kg",
+      "meters": "m"
+    }
+  },
+  "similar": {
+    "title": "Benzer Türler",
+    "noSimilarSpecies": "Benzer tür bulunamadı"
+  },
+  "follow": {
+    "follow": "Takip Et",
+    "following": "Takip Ediliyor",
+    "followers": "takipçi",
+    "follower": "takipçi",
+    "followSystemNotActive": "Takip sistemi henüz aktif değil. Lütfen daha sonra tekrar deneyin."
+  },
+  "reviews": {
+    "addReview": "Yorum Ekle",
+    "editReview": "Yorumu Düzenle",
+    "deleteReview": "Değerlendirmeyi Sil",
+    "deleteReviewConfirm": "Değerlendirmenizi silmek istediğinize emin misiniz?",
+    "couldNotDeleteReview": "Değerlendirme silinemedi",
+    "couldNotVote": "Oy verilemedi",
+    "couldNotSubmitReview": "Değerlendirme gönderilemedi",
+    "yourRating": "Değerlendirmeniz",
+    "tapToRate": "Yıldızlara dokunarak puanlayın",
+    "yourReview": "Yorumunuz",
+    "reviewPlaceholder": "Bu balık hakkındaki deneyimlerinizi paylaşın...",
+    "communityQuestions": "Topluluk Soruları",
+    "optional": "opsiyonel",
+    "communityDescription": "Diğer balıkçıların faydalanması için bilgilerinizi paylaşın",
+    "goodEating": "İyi yenir mi?",
+    "goodFighter": "İyi dövüşür mü?",
+    "hardToCatch": "Zor yakalanır?",
+    "update": "Güncelle",
+    "title": "Değerlendirmeler",
+    "writeReview": "Değerlendirme Yap",
+    "yourReview": "Sizin Değerlendirmeniz",
+    "edit": "Düzenle",
+    "verified": "Doğrulandı",
+    "loading": "Yükleniyor...",
+    "showMore": "Daha Fazla Göster",
+    "noReviewsYet": "Henüz değerlendirme yapılmamış. İlk değerlendirmeyi siz yapın!",
+    "catches": "yakalama",
+    "bestTechnique": "En iyi teknik:",
+    "tips": "İpuçları:",
+    "helpful": "Bu değerlendirme yardımcı oldu mu?",
+    "difficultyLevels": {
+      "easy": "Kolay",
+      "medium": "Orta", 
+      "hard": "Zor"
+    }
+  },
+  "disciplines": {
+    "sortBy": "Sırala:",
+    "popularity": "Popülerlik",
+    "success": "Başarı",
+    "success": "başarı",
+    "techniques": "Teknikler:",
+    "emptyState": {
+      "title": "Bu tür için balıkçılık disiplini bulunamadı",
+      "subtitle": "Yeni teknikler yakında eklenecek"
+    },
+    "allSeasons": "Tüm mevsimler",
+    "morningEvening": "Sabah-Akşam",
+    "noReviews": "Henüz değerlendirme yok"
+  },
+  "communityStats": {
+    "title": "Topluluk Verileri",
+    "subtitle": "Bu tür hakkında detaylar vererek topluluğa yardımcı olun",
+    "contributors": "katkıda bulunan",
+    "responses": "yanıt",
+    "mixed": "Kararsız",
+    "questions": {
+      "goodEating": "Yemek İçin İyi mi?",
+      "goodFight": "İyi Mücadele Eder mi?",
+      "hardToCatch": "Yakalamak Zor mu?"
+    }
+  },
+  "card": {
+    "family": "Familya:",
+    "viewDetails": "Detayları Görüntüle →"
+  },
+  "catches": {
+    "title": "Avlar",
+    "photos": "fotoğraf",
+    "loadMore": "Daha Fazla Yükle"
+  },
+  "screen": {
+    "title": "Balık Türleri",
+    "searchPlaceholder": "Balık türü ara...",
+    "posts": "gönderi",
+    "species": "tür",
+    "noDescription": "Açıklama mevcut değil",
+    "allYear": "Tüm yıl",
+    "noSpeciesFound": "Balık türü bulunamadı"
+  },
+  "detail": {
+    "fishNotFound": "Balık bilgisi bulunamadı",
+    "posts": "Gönderi",
+    "followers": "Takipçi",
+    "rating": "Puan",
+    "info": "Bilgi",
+    "techniques": "Teknikler",
+    "locations": "Lokasyonlar",
+    "description": "Açıklama",
+    "characteristics": "Özellikler",
+    "size": "Boyut",
+    "weight": "Ağırlık",
+    "habitat": "Yaşam Alanı",
+    "difficulty": "Zorluk",
+    "easy": "Kolay",
+    "medium": "Orta",
+    "hard": "Zor",
+    "bestSeason": "En İyi Sezon",
+    "bestTime": "En İyi Zaman",
+    "bestWeather": "En İyi Hava",
+    "bait": "Yem",
+    "bestBait": "En İyi Yem",
+    "legalInfo": "Yasal Bilgiler",
+    "minSize": "Minimum Boy",
+    "maxCatch": "Günlük Limit",
+    "seasonRestriction": "Av Yasağı",
+    "protectionStatus": "Koruma Durumu",
+    "waterType": "Su Tipi",
+    "freshwater": "Tatlı Su",
+    "saltwater": "Tuzlu Su",
+    "shareMessage": "{{name}} ({{scientificName}}) - Fishivo'da keşfet!",
+    "generalInfo": "Genel Bilgi",
+    "feeding": "Beslenme",
+    "averageLength": "Ortalama Uzunluk",
+    "maximumWeight": "Maksimum Ağırlık",
+    "recommendedTechniques": "Önerilen Teknikler",
+    "popularLocations": "Popüler Lokasyonlar",
+    "depth": "Derinlik"
+  }
+}

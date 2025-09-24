@@ -1,0 +1,185 @@
+{
+  "title": "Fish Species",
+  "searchPlaceholder": "Search fish species...",
+  "noSpeciesFound": "No fish species found",
+  "speciesNotFound": "Fish species not found",
+  "relatedSpecies": "Related Species",
+  "tabs": {
+    "details": "Details",
+    "reviews": "Reviews",
+    "catches": "Catches",
+    "similar": "Similar",
+    "gear": "Top Gear",
+    "disciplines": "Disciplines"
+  },
+  "topGear": {
+    "categories": {
+      "all": "All",
+      "rod": "Rods",
+      "reel": "Reels",
+      "line": "Lines",
+      "bait": "Baits",
+      "lure": "Lures",
+      "hook": "Hooks"
+    },
+    "recommendations": "people use this",
+    "reviews": "reviews",
+    "emptyState": {
+      "title": "No equipment found",
+      "subtitle": "No equipment in this category"
+    }
+  },
+  "details": {
+    "basicInfo": "Basic Information",
+    "generalInfo": "General Information",
+    "physicalCharacteristics": "Physical Characteristics",
+    "habitat": "Habitat",
+    "scientificName": "Scientific Name",
+    "commonNames": "Common Names",
+    "family": "Family",
+    "order": "Order",
+    "waterType": "Water Type",
+    "maxLength": "Maximum Length",
+    "maxWeight": "Maximum Weight",
+    "depthRange": "Depth Range",
+    "feedingTypes": "Feeding Types",
+    "conservationStatus": "Conservation Status",
+    "noDescriptionAvailable": "No description available",
+    "units": {
+      "cm": "cm",
+      "kg": "kg",
+      "meters": "m"
+    }
+  },
+  "similar": {
+    "title": "Similar Species",
+    "noSimilarSpecies": "No similar species found"
+  },
+  "follow": {
+    "follow": "Follow",
+    "following": "Following",
+    "followers": "followers",
+    "follower": "follower",
+    "followSystemNotActive": "Follow system is not active yet. Please try again later."
+  },
+  "reviews": {
+    "addReview": "Add Review",
+    "editReview": "Edit Review",
+    "deleteReview": "Delete Review",
+    "deleteReviewConfirm": "Are you sure you want to delete your review?",
+    "couldNotDeleteReview": "Could not delete review",
+    "couldNotVote": "Could not vote",
+    "couldNotSubmitReview": "Could not submit review",
+    "yourRating": "Your Rating",
+    "tapToRate": "Tap stars to rate",
+    "yourReview": "Your Review",
+    "reviewPlaceholder": "Share your experience with this fish...",
+    "communityQuestions": "Community Questions",
+    "optional": "optional",
+    "communityDescription": "Share your knowledge to help other anglers",
+    "goodEating": "Good eating?",
+    "goodFighter": "Good fighter?",
+    "hardToCatch": "Hard to catch?",
+    "update": "Update",
+    "title": "Reviews",
+    "writeReview": "Write a Review",
+    "yourReview": "Your Review", 
+    "edit": "Edit",
+    "verified": "Verified",
+    "loading": "Loading...",
+    "showMore": "Show More",
+    "noReviewsYet": "No reviews yet. Be the first to review!",
+    "catches": "catches",
+    "bestTechnique": "Best technique:",
+    "tips": "Tips:",
+    "helpful": "Was this helpful?",
+    "difficultyLevels": {
+      "easy": "Easy",
+      "medium": "Medium",
+      "hard": "Hard"
+    }
+  },
+  "disciplines": {
+    "sortBy": "Sort by:",
+    "popularity": "Popularity",
+    "success": "Success",
+    "success": "success",
+    "techniques": "Techniques:",
+    "emptyState": {
+      "title": "No fishing disciplines found for this species",
+      "subtitle": "New techniques will be added soon"
+    },
+    "allSeasons": "All seasons",
+    "morningEvening": "Morning-Evening",
+    "noReviews": "No reviews yet"
+  },
+  "communityStats": {
+    "title": "Community Data",
+    "subtitle": "Help the community by sharing details about this species",
+    "contributors": "contributors",
+    "responses": "responses",
+    "mixed": "Mixed",
+    "questions": {
+      "goodEating": "Good Eating?",
+      "goodFight": "Good Fight?",
+      "hardToCatch": "Hard to Catch?"
+    }
+  },
+  "card": {
+    "family": "Family:",
+    "viewDetails": "View Details →"
+  },
+  "catches": {
+    "title": "Catches",
+    "photos": "photos",
+    "loadMore": "Load More"
+  },
+  "screen": {
+    "title": "Fish Species",
+    "searchPlaceholder": "Search fish species...",
+    "posts": "posts",
+    "species": "species",
+    "noDescription": "No description available",
+    "allYear": "All year",
+    "noSpeciesFound": "No fish species found"
+  },
+  "detail": {
+    "fishNotFound": "Fish information not found",
+    "posts": "Posts",
+    "followers": "Followers",
+    "rating": "Rating",
+    "info": "Info",
+    "techniques": "Techniques",
+    "locations": "Locations",
+    "description": "Description",
+    "characteristics": "Characteristics",
+    "size": "Size",
+    "weight": "Weight",
+    "habitat": "Habitat",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "bestSeason": "Best Season",
+    "bestTime": "Best Time",
+    "bestWeather": "Best Weather",
+    "bait": "Bait",
+    "bestBait": "Best Bait",
+    "legalInfo": "Legal Information",
+    "minSize": "Minimum Size",
+    "maxCatch": "Daily Limit",
+    "seasonRestriction": "Season Restriction",
+    "protectionStatus": "Protection Status",
+    "waterType": "Water Type",
+    "freshwater": "Freshwater",
+    "saltwater": "Saltwater",
+    "shareMessage": "{{name}} ({{scientificName}}) - Discover on Fishivo!",
+    "generalInfo": "General Information",
+    "feeding": "Feeding",
+    "averageLength": "Average Length",
+    "maximumWeight": "Maximum Weight",
+    "recommendedTechniques": "Recommended Techniques",
+    "popularLocations": "Popular Locations",
+    "depth": "Depth"
+  }
+}

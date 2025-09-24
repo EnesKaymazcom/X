@@ -1,0 +1,57 @@
+{
+  "kvkk": {
+    "title": "KVKK Bildirimi",
+    "description": "Fishivo olarak, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında kişisel verilerinizin güvenliğini en üst düzeyde tutmaktayız. Verileriniz, Avrupa Birliği veri koruma standartlarına uygun olarak Almanya'da bulunan güvenli sunucularımızda şifrelenerek saklanmakta ve yalnızca hizmet sunumu amacıyla, yasal çerçeveler dahilinde işlenmektedir."
+  },
+  "categories": {
+    "essential": {
+      "name": "Zorunlu Çerezler",
+      "description": "Web sitesinin temel işlevleri için gerekli"
+    },
+    "analytics": {
+      "name": "Analitik Çerezler",
+      "description": "Hizmet kalitesini iyileştirmek için kullanılır"
+    },
+    "marketing": {
+      "name": "Pazarlama Çerezleri",
+      "description": "Kişiselleştirilmiş içerik ve reklamlar için"
+    }
+  },
+  "showDetails": "Hangi veriler toplanıyor?",
+  "reject": "Reddet",
+  "acceptSelected": "Seçilenleri Kabul Et",
+  "acceptAll": "Tümünü Kabul Et",
+  "details": {
+    "title": "İşlenen Kişisel Veriler:",
+    "identity": {
+      "title": "Kimlik Bilgileri:",
+      "description": "Ad, soyad ve e-posta adresi (hesap oluşturma ve kimlik doğrulama)"
+    },
+    "contact": {
+      "title": "İletişim Bilgileri:",
+      "description": "E-posta adresi (hizmet bildirimleri)"
+    },
+    "security": {
+      "title": "İşlem Güvenliği Bilgileri:",
+      "description": "IP adresi, tarayıcı bilgisi (güvenlik ve dolandırıcılık önleme)"
+    },
+    "usage": {
+      "title": "İşlem Bilgileri:",
+      "description": "Hizmet kullanım verileri (hizmet kalitesi ve iyileştirme)"
+    },
+    "commitment": {
+      "title": "Güvenlik Taahhüdümüz:",
+      "description": "Verileriniz 256-bit SSL şifreleme ile korunmakta, üçüncü taraflarla paylaşılmamakta ve yalnızca yasal saklama süreleri boyunca muhafaza edilmektedir. Pazarlama amaçlı çerez veya izleme teknolojileri kullanmıyoruz."
+    }
+  },
+  "links": {
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Koşulları"
+  },
+  "cookieSettings": {
+    "title": "Çerez Tercihleri",
+    "description": "Web sitemizdeki deneyiminizi iyileştirmek için çerezleri nasıl kullandığımızı yönetin.",
+    "save": "Tercihleri Kaydet",
+    "saved": "Tercihleriniz kaydedildi"
+  }
+}

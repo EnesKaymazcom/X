@@ -1,0 +1,46 @@
+{
+  "company": {
+    "name": "Fishivo",
+    "slogan": "Digital platform for fishing enthusiasts"
+  },
+  "sections": {
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "fishSpecies": "Fish Species",
+      "map": "Map",
+      "support": "Support",
+      "contact": "Contact",
+      "faq": "FAQ"
+    },
+    "social": {
+      "title": "Social Media",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "facebook": "Facebook"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "kvkk": "KVKK Notice",
+      "cookies": "Cookie Policy"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
+    },
+    "mobile": {
+      "title": "Try Mobile App",
+      "description": "Discover the best fishing spots, log your catches and spots.",
+      "downloadApp": "Download App",
+      "appStore": "on App Store",
+      "googlePlay": "on Google Play"
+    }
+  },
+  "copyright": "© {{year}} Fishivo. All rights reserved.",
+  "madeWith": "Made with 🎣 in Istanbul"
+}

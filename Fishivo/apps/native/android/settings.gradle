@@ -1,0 +1,32 @@
+pluginManagement {
+    includeBuild("../../../node_modules/@react-native/gradle-plugin")
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+plugins { 
+    id("com.facebook.react.settings")
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> 
+    ex.autolinkLibrariesFromCommand(
+        ["npx", "@react-native-community/cli", "config"],
+        file("../"),
+        files("../../../yarn.lock", "../../../package.json", "../react-native.config.js")
+    )
+}
+
+rootProject.name = 'Fishivo'
+include ':app'
+includeBuild('../../../node_modules/@react-native/gradle-plugin')
+
+// Manual react-native-vector-icons
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../../../node_modules/react-native-vector-icons/android')
+
+// Manual react-native-config
+include ':react-native-config'
+project(':react-native-config').projectDir = new File(rootProject.projectDir, '../../../node_modules/react-native-config/android')

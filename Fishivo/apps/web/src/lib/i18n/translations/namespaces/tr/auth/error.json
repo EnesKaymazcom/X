@@ -1,0 +1,19 @@
+{
+  "linkExpiredTitle": "Link Süresi Doldu",
+  "linkExpiredDescription": "Şifre sıfırlama linkinin süresi dolmuş. Lütfen yeni bir link isteyin.",
+  "invalidLinkTitle": "Geçersiz Link", 
+  "invalidLinkDescription": "Link geçersiz veya zaten kullanılmış. Lütfen yeni bir şifre sıfırlama isteği gönderin.",
+  "alreadyConfirmedTitle": "Zaten Onaylandı",
+  "alreadyConfirmedDescription": "Bu hesap zaten onaylanmış.",
+  "genericTitle": "Kimlik Doğrulama Hatası",
+  "genericDescription": "Beklenmeyen bir hata oluştu.",
+  "resendFailed": "E-posta gönderilemedi",
+  "resendSuccess": "E-posta başarıyla gönderildi!",
+  "helpTitle": "Yardıma mı ihtiyacınız var?",
+  "checkSpam": "Spam klasörünüzü kontrol edin",
+  "checkEmail": "E-posta adresinin doğru olduğundan emin olun",
+  "wait5Minutes": "Birkaç dakika bekleyip tekrar deneyin",
+  "resending": "Gönderiliyor...",
+  "resendEmail": "E-postayı Tekrar Gönder",
+  "backToLogin": "Giriş Sayfasına Dön"
+}

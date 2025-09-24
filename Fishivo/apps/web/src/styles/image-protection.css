@@ -1,0 +1,128 @@
+/* Image Protection Styles */
+
+/* Disable text selection globally for protected content */
+.protected-content {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable drag for images */
+.protected-image {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  /* Removed pointer-events: none to allow image display */
+}
+
+/* Override pointer events for interaction */
+.protected-image-container {
+  pointer-events: auto;
+}
+
+/* Prevent image highlighting */
+.no-highlight {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide images during print */
+@media print {
+  .protected-image {
+    display: none !important;
+  }
+  
+  .print-protection::after {
+    content: "Bu görsel yazdırılamaz - Telif hakları ile korunmaktadır";
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+}
+
+/* Disable context menu styling */
+.no-context-menu {
+  -webkit-context-menu: none;
+  context-menu: none;
+}
+
+/* Override browser default image border when dragging */
+img.protected-image::-moz-selection {
+  background: transparent;
+}
+
+img.protected-image::selection {
+  background: transparent;
+}
+
+/* Prevent image loading states that might expose URL */
+.protected-image::before {
+  content: '';
+  display: none;
+}
+
+/* Additional security for WebKit browsers */
+@supports (-webkit-appearance: none) {
+  .protected-image {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+  }
+}
+
+/* Firefox specific protection */
+@-moz-document url-prefix() {
+  .protected-image {
+    -moz-user-select: none;
+    -moz-user-drag: none;
+  }
+}
+
+/* Disable long press on mobile */
+.protected-image {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Watermark overlay styles */
+.watermark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05) 2px,
+      transparent 2px,
+      transparent 20px
+    );
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Dark mode watermark */
+.dark .watermark-overlay {
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1) 2px,
+      transparent 2px,
+      transparent 20px
+    );
+}

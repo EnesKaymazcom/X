@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020"],
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "composite": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./apps/native/src/*"],
+      "@fishivo/*": ["./packages/*/dist"]
+    }
+  },
+  "references": [
+    { "path": "./packages/types" },
+    { "path": "./packages/utils" },
+    { "path": "./packages/hooks" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/api" },
+    { "path": "./apps/web" },
+    { "path": "./apps/native" }
+  ],
+  "files": []
+} 

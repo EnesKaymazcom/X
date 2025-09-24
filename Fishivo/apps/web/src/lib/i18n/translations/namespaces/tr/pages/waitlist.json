@@ -1,0 +1,36 @@
+{
+  "title": "Yakında App Store ve Google Play'de!",
+  "subtitle": "Türkiye'nin en kapsamlı balıkçılık sosyal ağı. Avlarınızı paylaşın, ekipmanlarınızı kaydedin, deneyimli oltacılardan taktikler öğrenin. Profesyonel balıkçılık için detaylı hava durumu, gel-git saatleri ve rüzgar bilgileriyle mükemmel av zamanını yakalayın. Binlerce balıkçıyla tanışın, gizli av noktalarını keşfedin ve rekorlarınızı ölümsüzleştirin.",
+  "form": {
+    "email": {
+      "placeholder": "E-posta adresinizi girin",
+      "error": "Lütfen geçerli bir e-posta adresi girin"
+    },
+    "submit": "Bekleme Listesine Katıl",
+    "submitting": "Kaydediliyor...",
+    "success": {
+      "title": "Teşekkürler! E-postanız başarıyla kaydedildi!",
+      "description": "Uygulama hazır olduğunda sizi bilgilendireceğiz.",
+      "backButton": "Başka E-posta Ekle"
+    }
+  },
+  "benefits": {
+    "earlyAccess": {
+      "title": "Erken Erişim",
+      "description": "Uygulama yayınlandığında ilk deneyimleyenlerden olun!"
+    },
+    "specialBenefits": {
+      "title": "Özel Avantajlar",
+      "description": "Premium özellikler için erken kayıt indirimleri!"
+    },
+    "vipCommunity": {
+      "title": "VIP Topluluğu",
+      "description": "Beta test sürecine katılın ve geri bildirim sağlayın!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Fishivo. Tüm hakları saklıdır.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfService": "Kullanım Şartları"
+  }
+}

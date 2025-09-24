@@ -1,0 +1,79 @@
+buildscript {
+    ext {
+        buildToolsVersion = "36.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 36
+        targetSdkVersion = 35
+        ndkVersion = "27.1.12297006"
+        kotlinVersion = "2.0.21"
+        MAPBOX_DOWNLOADS_TOKEN = project.hasProperty("MAPBOX_DOWNLOADS_TOKEN") ? project.property("MAPBOX_DOWNLOADS_TOKEN") : (System.getenv("MAPBOX_DOWNLOADS_TOKEN") ?: "")
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.9.1")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+    }
+}
+
+allprojects {
+    project.pluginManager.withPlugin("com.facebook.react") {
+        react {
+            // Configure all paths for monorepo structure
+            // Set React Native app root to apps/native (not monorepo root)
+            root = rootProject.file("..")
+            reactNativeDir = rootProject.file("../../../node_modules/react-native/")
+            codegenDir = rootProject.file("../../../node_modules/@react-native/codegen/")
+            cliFile = rootProject.file("../../../node_modules/react-native/cli.js")
+        }
+    }
+    
+    repositories {
+        google()
+        mavenCentral()
+        // Mapbox Maven repository
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = 'mapbox'
+                password = project.hasProperty('MAPBOX_DOWNLOADS_TOKEN') ? project.properties['MAPBOX_DOWNLOADS_TOKEN'] : (System.getenv("MAPBOX_DOWNLOADS_TOKEN") ?: "")
+            }
+        }
+        // JitPack repository for other dependencies
+        maven { url 'https://www.jitpack.io' }
+        // Remove the problematic excludeGroup that blocks React Native from Maven Central
+        // Don't exclude React Native artifacts - let them download from Maven Central
+    }
+    
+    // Fix for buildConfig issue and namespace resolution
+    afterEvaluate { project ->
+        if (project.hasProperty('android')) {
+            project.android {
+                buildFeatures {
+                    buildConfig = true
+                }
+                
+                // Auto-detect namespace from AndroidManifest.xml
+                if (!project.android.hasProperty('namespace') || project.android.namespace == null) {
+                    def manifestFile = project.file('src/main/AndroidManifest.xml')
+                    if (manifestFile.exists()) {
+                        def manifestText = manifestFile.text
+                        def packageMatch = manifestText =~ /package\s*=\s*"([^"]+)"/
+                        if (packageMatch) {
+                            project.android.namespace = packageMatch[0][1]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Apply React Native root project plugin
+apply plugin: "com.facebook.react.rootproject"

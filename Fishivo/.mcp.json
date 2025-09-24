@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase@latest",
+        "--project-ref=kqvhyiexevsdlhzcnhrc"
+      ],
+      "env": {
+        "SUPABASE_ACCESS_TOKEN": "sbp_4c7dee6e3d3951d56548a60f19ac6686b4952960"
+      }
+    },
+    "coolify": {
+      "command": "npx",
+      "args": ["-y", "@masonator/coolify-mcp"],
+      "env": {
+        "COOLIFY_ACCESS_TOKEN": "1|oUtSPIciOGxTNA7wE5t4AVgmDwtiZt3A3RS9oMWsfe68b626",
+        "COOLIFY_BASE_URL": "https://panel.fishivo.com"
+      }
+    },
+    "ssh": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ssh-mcp",
+        "--",
+        "--host=147.79.119.21",
+        "--port=22",
+        "--user=root",
+        "--timeout=30000"
+      ]
+    },
+    "context7": {
+      "command": "/usr/local/bin/node",
+      "args": ["/usr/local/bin/npx", "-y", "@upstash/context7-mcp@latest"]
+    }
+  }
+}

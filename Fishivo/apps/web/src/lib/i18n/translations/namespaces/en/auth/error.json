@@ -1,0 +1,19 @@
+{
+  "linkExpiredTitle": "Link Expired",
+  "linkExpiredDescription": "The password reset link has expired. Please request a new one.",
+  "invalidLinkTitle": "Invalid Link",
+  "invalidLinkDescription": "The link is invalid or has already been used. Please request a new password reset.",
+  "alreadyConfirmedTitle": "Already Confirmed",
+  "alreadyConfirmedDescription": "This account has already been confirmed.",
+  "genericTitle": "Authentication Error",
+  "genericDescription": "An unexpected error occurred.",
+  "resendFailed": "Failed to resend email",
+  "resendSuccess": "Email sent successfully!",
+  "helpTitle": "Need Help?",
+  "checkSpam": "Check your spam folder",
+  "checkEmail": "Make sure the email address is correct",
+  "wait5Minutes": "Wait a few minutes and try again",
+  "resending": "Sending...",
+  "resendEmail": "Resend Email",
+  "backToLogin": "Back to Login"
+}

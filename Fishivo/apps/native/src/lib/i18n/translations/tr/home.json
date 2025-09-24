@@ -1,0 +1,87 @@
+{
+  "title": "Topluluk",
+  "tabs": {
+    "forYou": "Senin İçin",
+    "following": "Takip Ettiklerin"
+  },
+  "newPost": "Yeni Gönderi",
+  "noContent": {
+    "forYou": "Henüz gönderi yok",
+    "following": "Takip ettiğin kullanıcılardan gönderi yok"
+  },
+  "post": {
+    "like": "Beğen",
+    "unlike": "Beğeniyi Kaldır",
+    "comment": "Yorum Yap",
+    "share": "Paylaş",
+    "report": "Bildir",
+    "delete": "Sil",
+    "likes": "{count} beğeni",
+    "comments": "{count} yorum",
+    "viewAllComments": "Tüm yorumları gör"
+  },
+  "addSpot": {
+    "title": "Yeni Spot Ekle",
+    "selectLocation": "Konum Seç",
+    "spotName": "Spot Adı",
+    "description": "Açıklama",
+    "fishTypes": "Balık Türleri",
+    "bestTime": "En İyi Zaman",
+    "addPhotos": "Fotoğraf Ekle",
+    "save": "Kaydet"
+  },
+  "addCatch": {
+    "title": "Yeni Av Ekle",
+    "fishType": "Balık Türü",
+    "weight": "Ağırlık (kg)",
+    "length": "Uzunluk (cm)",
+    "location": "Konum",
+    "catchDate": "Yakalanma Tarihi",
+    "catchTime": "Yakalanma Saati",
+    "description": "Açıklama",
+    "addPhotos": "Fotoğraf Ekle",
+    "save": "Kaydet"
+  },
+  "actions": {
+    "title": "Seçenekler",
+    "showOptions": "Seçenekleri Göster",
+    "follow": "Takip Et",
+    "unfollow": "Takip",
+    "report": "Bildir",
+    "block": "Engelle",
+    "blockTitle": "Kullanıcıyı Engelle",
+    "blockConfirmTitle": "Kullanıcıyı Engelle",
+    "blockConfirmMessage": "Bu kullanıcıyı engellemek istediğinizden emin misiniz? Engellenen kullanıcılar sizi göremez ve sizinle etkileşime geçemez.",
+    "confirmBlock": "Engelle",
+    "postOptions": "Gönderi Seçenekleri",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "deleteConfirmTitle": "Gönderiyi Sil",
+    "deleteConfirmMessage": "Bu gönderiyi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "confirmDelete": "Evet"
+  },
+  "reportTitle": "Bildir",
+  "reportDescription": "Bu içeriği neden bildiriyorsunuz?",
+  "reportDescriptionPlaceholder": "Ek açıklama (opsiyonel)",
+  "reportSuccess": "Teşekkürler, bildiriminiz alındı",
+  "reportError": "Bildirim gönderilirken bir hata oluştu. Lütfen tekrar deneyin.",
+  "reportReasons": {
+    "harassment": "Zorbalık ve Taciz",
+    "hate_speech": "Nefret Söylemi",
+    "spam": "Spam ve Dolandırıcılık",
+    "violence_threat": "Şiddet ve Tehdit",
+    "inappropriate_content": "Uygunsuz İçerik",
+    "advertising": "Reklam"
+  },
+  "success": {
+    "followed": "{{name}} takip ediliyor",
+    "unfollowed": "{{name}} takipten çıkarıldı",
+    "reported": "Başarıyla bildirildi",
+    "blocked": "Kullanıcı engellendi"
+  },
+  "error": {
+    "blockFailed": "Kullanıcı engellenirken bir hata oluştu"
+  },
+  "loading": "Yükleniyor...",
+  "refresh": "Yenile"
+}

@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "context7": {
-      "command": "/usr/local/bin/node",
-      "args": ["/usr/local/bin/npx", "-y", "@upstash/context7-mcp@latest"]
-    }
-  }
-}

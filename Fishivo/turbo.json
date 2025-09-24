@@ -1,19 +1,211 @@
 {
-  "$schema": "https://turborepo.com/schema.json",
-  "ui": "tui",
+  "$schema": "https://turborepo.org/schema.json",
+  "globalEnv": [
+    "NODE_ENV", 
+    "CI", 
+    "YARN_CACHE_FOLDER",
+    "OPEN_METEO_API_KEY",
+    "WEATHER_API_KEY",
+    "WEATHER_API_URL",
+    "IPGEOLOCATION_API_KEY",
+    "WEATHERAPI_KEY",
+    "ENABLE_ASTRONOMY",
+    "ENABLE_FISHING_CONDITIONS",
+    "ENABLE_WEATHER_CACHE"
+  ],
+  "globalPassThroughEnv": [
+    "TURBO_*",
+    "CI",
+    "YARN_*"
+  ],
+  "globalDependencies": [
+    "tsconfig.json", 
+    "yarn.lock", 
+    "**/.env",
+    "**/.env.local",
+    "**/.env.production",
+    "**/.env.development"
+  ],
+  "envMode": "strict",
   "tasks": {
-    "build": {
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
-      "dependsOn": ["^build"]
-    },
     "dev": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "persistent": true,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env",
+        ".env.local",
+        ".env.development"
+      ],
+      "env": [
+        "METRO_PORT",
+        "API_URL_*",
+        "WEB_URL_*", 
+        "API_TIMEOUT",
+        "API_RETRY_ATTEMPTS",
+        "API_RETRY_DELAY",
+        "NEXT_PUBLIC_*",
+        "SUPABASE_*",
+        "GOOGLE_*",
+        "FACEBOOK_*",
+        "CLOUDFLARE_*",
+        "SMTP_*",
+        "APP_NAME",
+        "WEB_API_URL"
+      ]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env",
+        ".env.production",
+        "!**/*.test.*",
+        "!**/*.stories.*"
+      ],
+      "env": [
+        "NODE_ENV",
+        "API_URL_*",
+        "WEB_URL_*",
+        "NEXT_PUBLIC_*",
+        "SUPABASE_URL",
+        "SUPABASE_ANON_KEY",
+        "CLOUDFLARE_*",
+        "SMTP_*"
+      ],
+      "outputLogs": "new-only"
+    },
+    "@fishivo/native#build": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env",
+        "!**/*.test.*"
+      ],
+      "outputLogs": "new-only"
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true,
+      "env": [
+        "METRO_PORT",
+        "API_URL_*",
+        "NEXT_PUBLIC_*",
+        "SESSION_SECRET",
+        "SUPABASE_*",
+        "CLOUDFLARE_*",
+        "GOOGLE_CLIENT_SECRET",
+        "FACEBOOK_APP_SECRET"
+      ],
+      "passThroughEnv": [
+        "DATABASE_URL",
+        "REDIS_URL"
+      ]
+    },
+    "android": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true,
+      "env": ["ANDROID_HOME", "JAVA_HOME"]
+    },
+    "android:build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "android/app/build/outputs/apk/debug/**",
+        "android/app/build/outputs/apk/release/**",
+        "android/app/build/outputs/bundle/**"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "android/**/*.gradle",
+        "android/**/*.properties",
+        "android/**/AndroidManifest.xml"
+      ],
+      "env": ["ANDROID_HOME", "JAVA_HOME"]
+    },
+    "apk": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "android/app/build/outputs/apk/release/**"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "android/**/*.gradle",
+        "android/**/*.properties",
+        "android/**/AndroidManifest.xml"
+      ],
+      "env": ["ANDROID_HOME", "JAVA_HOME"]
+    },
+    "aab": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "android/app/build/outputs/bundle/release/**"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "android/**/*.gradle",
+        "android/**/*.properties",
+        "android/**/AndroidManifest.xml"
+      ],
+      "env": ["ANDROID_HOME", "JAVA_HOME"]
+    },
+    "android:clean": {
+      "cache": false,
+      "env": ["ANDROID_HOME", "JAVA_HOME"]
+    },
+    "ios": {
+      "dependsOn": ["^build"],
       "cache": false,
       "persistent": true
     },
-    "lint": {},
+    "ios:build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        "ios/build/**",
+        "ios/*.xcarchive"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "ios/**/*.xcworkspace",
+        "ios/**/*.plist"
+      ]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"],
+      "inputs": ["src/**/*.test.*", "test/**/*"],
+      "env": [
+        "NEXT_PUBLIC_*",
+        "API_URL"
+      ],
+      "outputLogs": "errors-only"
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "outputLogs": "errors-only"
+    },
     "clean": {
       "cache": false
+    },
+    "//#format": {
+      "outputs": []
+    },
+    "//#format:fix": {
+      "cache": false
+    },
+    "typecheck": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "outputLogs": "errors-only"
     }
   }
 }

@@ -1,0 +1,87 @@
+{
+  "title": "Community",
+  "tabs": {
+    "forYou": "For You",
+    "following": "Following"
+  },
+  "newPost": "New Post",
+  "noContent": {
+    "forYou": "No posts yet",
+    "following": "No posts from users you follow"
+  },
+  "post": {
+    "like": "Like",
+    "unlike": "Unlike",
+    "comment": "Comment",
+    "share": "Share",
+    "report": "Report",
+    "delete": "Delete",
+    "likes": "{count} likes",
+    "comments": "{count} comments",
+    "viewAllComments": "View all comments"
+  },
+  "addSpot": {
+    "title": "Add New Spot",
+    "selectLocation": "Select Location",
+    "spotName": "Spot Name",
+    "description": "Description",
+    "fishTypes": "Fish Types",
+    "bestTime": "Best Time",
+    "addPhotos": "Add Photos",
+    "save": "Save"
+  },
+  "addCatch": {
+    "title": "Add New Catch",
+    "fishType": "Fish Type",
+    "weight": "Weight (kg)",
+    "length": "Length (cm)",
+    "location": "Location",
+    "catchDate": "Catch Date",
+    "catchTime": "Catch Time",
+    "description": "Description",
+    "addPhotos": "Add Photos",
+    "save": "Save"
+  },
+  "actions": {
+    "title": "Options",
+    "showOptions": "Show Options",
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "report": "Report",
+    "block": "Block",
+    "blockTitle": "Block User",
+    "blockConfirmTitle": "Block User",
+    "blockConfirmMessage": "Are you sure you want to block this user? Blocked users won't be able to see you or interact with you.",
+    "confirmBlock": "Block User",
+    "postOptions": "Post Options",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirmTitle": "Delete Post",
+    "deleteConfirmMessage": "Are you sure you want to delete this post? This action cannot be undone.",
+    "confirmDelete": "Delete"
+  },
+  "reportTitle": "Report",
+  "reportDescription": "Why are you reporting this content?",
+  "reportDescriptionPlaceholder": "Additional details (optional)",
+  "reportSuccess": "Thanks, we've received your report",
+  "reportError": "An error occurred while sending the report. Please try again.",
+  "reportReasons": {
+    "harassment": "Harassment and Bullying",
+    "hate_speech": "Hate Speech", 
+    "spam": "Spam and Scams",
+    "violence_threat": "Violence and Threats",
+    "inappropriate_content": "Inappropriate Content",
+    "advertising": "Advertising"
+  },
+  "success": {
+    "followed": "Following {{name}}",
+    "unfollowed": "Unfollowed {{name}}",
+    "reported": "Successfully reported",
+    "blocked": "User blocked"
+  },
+  "error": {
+    "blockFailed": "Failed to block user"
+  },
+  "loading": "Loading...",
+  "refresh": "Refresh"
+}

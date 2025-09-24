@@ -1,0 +1,135 @@
+{
+  "title": "Ayarlar",
+  "sections": {
+    "account": "Hesap",
+    "appSettings": "Uygulama Ayarları",
+    "other": "Diğer"
+  },
+  "items": {
+    "manageSubscription": {
+      "title": "Aboneliği Yönet",
+      "subtitle": "Premium özellikler ve faturalandırma"
+    },
+    "restorePurchases": {
+      "title": "Satın Alımları Geri Yükle",
+      "subtitle": "Önceki satın alımlarınızı geri yükleyin"
+    },
+    "editProfile": {
+      "title": "Profili Düzenle",
+      "subtitle": "Profil bilgilerinizi güncelleyin"
+    },
+    "notificationSettings": {
+      "title": "Bildirim Ayarları",
+      "subtitle": "Hangi bildirimleri alacağınızı seçin"
+    },
+    "messagePrivacy": {
+      "title": "Mesaj Gizliliği",
+      "subtitle": "Kimler size mesaj gönderebilir"
+    },
+    "blockedUsers": {
+      "title": "Engellenen Kullanıcılar",
+      "subtitle": "Engellediğiniz kullanıcıları yönetin"
+    },
+    "theme": {
+      "title": "Tema",
+      "subtitle": {
+        "light": "Açık",
+        "dark": "Koyu",
+        "system": "Sistem"
+      }
+    },
+    "language": {
+      "title": "Dil",
+      "subtitle": "Uygulama dilini seçin"
+    },
+    "units": {
+      "title": "Birimler ve Ölçüler",
+      "subtitle": "Metrik sistem ayarları"
+    },
+    "autoPlayVideos": {
+      "title": "Videoları Otomatik Oynat",
+      "subtitle": "Sadece Wi-Fi"
+    },
+    "helpCenter": {
+      "title": "Yardım Merkezi & SSS",
+      "subtitle": "Sıkça sorulan sorular ve yardım"
+    },
+    "feedbackAndSuggestions": {
+      "title": "Görüş ve Önerileriniz",
+      "subtitle": "Fikir ve önerilerinizi bizimle paylaşın"
+    },
+    "legal": {
+      "title": "Yasal",
+      "subtitle": "Gizlilik politikası ve kullanım şartları"
+    },
+    "logout": {
+      "title": "Çıkış Yap",
+      "subtitle": "Hesabınızdan güvenli şekilde çıkış yapın"
+    }
+  },
+  "messages": {
+    "purchasesRestored": "Satın alımlarınız geri yüklendi",
+    "featureComingSoon": "Bu özellik yakında aktif olacak",
+    "logoutConfirm": "Hesabınızdan çıkış yapmak istediğinizden emin misiniz?",
+    "languageChanged": "Dil değiştirildi"
+  },
+  "themeModal": {
+    "title": "Tema Seçimi",
+    "light": "Açık Tema",
+    "dark": "Koyu Tema",
+    "system": "Sistem Teması"
+  },
+  "languageModal": {
+    "title": "Dil Seçimi",
+    "turkish": "Türkçe",
+    "english": "English"
+  },
+  "units": {
+    "title": "Birimler ve Ölçüler",
+    "description": "Uygulamada kullanılacak ölçü birimlerini seçin. Bu ayarlar tüm spot ve balık kayıtlarınızda kullanılacak.",
+    "waterDepth": "Su Derinliği",
+    "fishWeight": "Balık Ağırlığı",
+    "fishLength": "Balık Boyu",
+    "waterTemperature": "Su Sıcaklığı",
+    "temperature": "Sıcaklık",
+    "distance": "Mesafe",
+    "windSpeed": "Rüzgar Hızı",
+    "airPressure": "Hava Basıncı",
+    "meter": "Metre (m)",
+    "feet": "Feet (ft)",
+    "fathom": "Fathom (ftm)",
+    "kilogram": "Kilogram (kg)",
+    "pound": "Pound (lbs)",
+    "gram": "Gram (g)",
+    "ounce": "Ounce (oz)",
+    "centimeter": "Santimetre (cm)",
+    "inch": "İnç (in)",
+    "meter_m": "Metre (m)",
+    "feet_ft": "Feet (ft)",
+    "celsius": "Celsius (°C)",
+    "fahrenheit": "Fahrenheit (°F)",
+    "kilometer": "Kilometre (km)",
+    "mile": "Mil (mi)",
+    "meter_m_distance": "Metre (m)",
+    "nauticalMile": "Nautical Mile (nm)",
+    "kmPerHour": "Kilometre/Saat (km/h)",
+    "milePerHour": "Mil/Saat (mph)",
+    "knot": "Knot (kn)",
+    "meterPerSecond": "Metre/Saniye (m/s)",
+    "hectopascal": "Hektopaskal (hPa)",
+    "inchMercury": "İnç Civa (inHg)",
+    "millibar": "Millibar (mbar)",
+    "millimeterMercury": "Milimetre Civa (mmHg)",
+    "infoText": "Bu ayarlar değiştirildiğinde, yeni girişleriniz seçilen birimlerle kaydedilir. Mevcut kayıtlarınız otomatik olarak dönüştürülmez.",
+    "reset": "Sıfırla",
+    "unsavedChanges": "Kaydedilmemiş Değişiklikler",
+    "unsavedChangesMessage": "Değişikliklerinizi kaydetmeden çıkmak istediğinizden emin misiniz?",
+    "exit": "Çık",
+    "resetConfirmTitle": "Sıfırla",
+    "resetConfirmMessage": "Tüm değişiklikleri geri almak istediğinizden emin misiniz?",
+    "savedSuccess": "Birim ayarlarınız kaydedildi",
+    "saveError": "Ayarlar kaydedilemedi",
+    "loadError": "Units yüklenirken hata:",
+    "saveErrorLog": "Units kaydedilirken hata:"
+  }
+}

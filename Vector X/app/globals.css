@@ -44,72 +44,72 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0 0 0);
-  --primary: oklch(0 0 0);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(1 0 0);
-  --secondary-foreground: oklch(0 0 0);
-  --muted: oklch(1 0 0);
-  --muted-foreground: oklch(0 0 0 / 60%);
-  --accent: oklch(1 0 0);
-  --accent-foreground: oklch(0 0 0);
-  --destructive: oklch(0 0 0);
-  --border: oklch(0 0 0);
-  --input: oklch(0 0 0);
-  --ring: oklch(0 0 0);
-  --chart-1: oklch(0 0 0);
-  --chart-2: oklch(0 0 0);
-  --chart-3: oklch(0 0 0);
-  --chart-4: oklch(0 0 0);
-  --chart-5: oklch(0 0 0);
-  --sidebar: oklch(1 0 0);
-  --sidebar-foreground: oklch(0 0 0);
-  --sidebar-primary: oklch(0 0 0);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(1 0 0);
-  --sidebar-accent-foreground: oklch(0 0 0);
-  --sidebar-border: oklch(0 0 0);
-  --sidebar-ring: oklch(0 0 0);
+  --radius: 1rem;
+  --background: #fafafa;
+  --foreground: #000000;
+  --card: rgba(0, 0, 0, 0.03);
+  --card-foreground: #000000;
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-foreground: #000000;
+  --primary: #000000;
+  --primary-foreground: #ffffff;
+  --secondary: rgba(0, 0, 0, 0.05);
+  --secondary-foreground: #000000;
+  --muted: rgba(0, 0, 0, 0.04);
+  --muted-foreground: #666666;
+  --accent: #0099ff;
+  --accent-foreground: #ffffff;
+  --destructive: #ff3333;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: rgba(0, 0, 0, 0.08);
+  --ring: #0099ff;
+  --chart-1: #0099ff;
+  --chart-2: #00ccff;
+  --chart-3: #0066ff;
+  --chart-4: #3366ff;
+  --chart-5: #6699ff;
+  --sidebar: rgba(255, 255, 255, 0.95);
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #000000;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(0, 0, 0, 0.05);
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: rgba(0, 0, 0, 0.08);
+  --sidebar-ring: #0099ff;
 }
 
 .dark {
-  --background: oklch(0 0 0);
-  --foreground: oklch(1 0 0);
-  --card: oklch(0 0 0);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(0 0 0);
-  --popover-foreground: oklch(1 0 0);
-  --primary: oklch(1 0 0);
-  --primary-foreground: oklch(0 0 0);
-  --secondary: oklch(0 0 0);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0 0 0);
-  --muted-foreground: oklch(1 0 0 / 60%);
-  --accent: oklch(0 0 0);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(1 0 0);
-  --border: oklch(1 0 0);
-  --input: oklch(1 0 0);
-  --ring: oklch(1 0 0);
-  --chart-1: oklch(1 0 0);
-  --chart-2: oklch(1 0 0);
-  --chart-3: oklch(1 0 0);
-  --chart-4: oklch(1 0 0);
-  --chart-5: oklch(1 0 0);
-  --sidebar: oklch(0 0 0);
-  --sidebar-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(1 0 0);
-  --sidebar-primary-foreground: oklch(0 0 0);
-  --sidebar-accent: oklch(0 0 0);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(1 0 0);
-  --sidebar-ring: oklch(1 0 0);
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: rgba(255, 255, 255, 0.03);
+  --card-foreground: #ffffff;
+  --popover: rgba(10, 10, 10, 0.95);
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #000000;
+  --secondary: rgba(255, 255, 255, 0.05);
+  --secondary-foreground: #ffffff;
+  --muted: rgba(255, 255, 255, 0.04);
+  --muted-foreground: #999999;
+  --accent: #0099ff;
+  --accent-foreground: #ffffff;
+  --destructive: #ff3333;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #0099ff;
+  --chart-1: #0099ff;
+  --chart-2: #00ccff;
+  --chart-3: #0066ff;
+  --chart-4: #3366ff;
+  --chart-5: #6699ff;
+  --sidebar: rgba(10, 10, 10, 0.95);
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: rgba(255, 255, 255, 0.05);
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #0099ff;
 }
 
 @layer base {
@@ -118,9 +118,74 @@
   }
   body {
     @apply bg-background text-foreground;
+    position: relative;
+    min-height: 100vh;
   }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+      var(--background) 0%,
+      color-mix(in srgb, var(--background) 95%, var(--accent)) 50%,
+      var(--background) 100%
+    );
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .dark body::before {
+    background: linear-gradient(135deg,
+      #000000 0%,
+      #0a0a0a 25%,
+      #050505 50%,
+      #0a0a0a 75%,
+      #000000 100%
+    );
+    opacity: 1;
+  }
+
   html {
     scroll-behavior: smooth;
+  }
+
+  input,
+  textarea {
+    background-color: transparent !important;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: inherit !important;
+    opacity: 0.5 !important;
+  }
+
+  .dark input,
+  .dark textarea {
+    background-color: transparent !important;
+  }
+
+  .dark input::placeholder,
+  .dark textarea::placeholder {
+    color: inherit !important;
+    opacity: 0.5 !important;
+  }
+
+  /* Glassmorphism effect for cards */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .dark .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
 

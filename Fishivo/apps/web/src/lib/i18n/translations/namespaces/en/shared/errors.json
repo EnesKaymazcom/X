@@ -1,0 +1,25 @@
+{
+  "404title": "Page Not Found",
+  "404description": "The page you're looking for couldn't be found. Check the URL or return to the home page.",
+  "backToHome": "Back to Home",
+  "exploreFishSpecies": "Explore Fish Species",
+  "errorBoundary": {
+    "title": "An error occurred",
+    "unexpectedError": "An unexpected error occurred. Please try again later.",
+    "tryAgain": "Try Again",
+    "goHome": "Home",
+    "errorDetails": "Error Details (Development)"
+  },
+  "general": "An error occurred!",
+  "networkError": "Network connection error",
+  "serverError": "Server error",
+  "unknownError": "An unknown error occurred",
+  "loadingFailed": "Loading failed",
+  "accessDenied": "Access denied",
+  "sessionExpired": "Session expired",
+  "validationError": "Validation error",
+  "forbidden": "You don't have permission for this action",
+  "notFound": "Data not found",
+  "conflict": "Conflict error",
+  "rateLimited": "Too many requests sent"
+}

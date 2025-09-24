@@ -1,0 +1,15 @@
+{
+  "title": "Explore",
+  "searchPlaceholder": "Search for fish, equipment or users...",
+  "users": "Users",
+  "species": "Fish Species",
+  "speciesDesc": "Explore different fish species",
+  "equipment": "Equipment",
+  "equipmentDesc": "Browse fishing equipment",
+  "noResults": "No results found",
+  "tryDifferentKeywords": "Try different keywords",
+  "searchError": "Search error",
+  "loading": "Searching...",
+  "noResults": "No results found",
+  "tryDifferentKeywords": "Try different keywords"
+}

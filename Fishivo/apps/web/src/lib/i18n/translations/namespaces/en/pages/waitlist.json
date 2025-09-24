@@ -1,0 +1,36 @@
+{
+  "title": "Coming Soon on App Store & Google Play!",
+  "subtitle": "A new social network for fishing enthusiasts. Share your catches, keep track of your gear, and exchange tips with fellow anglers. Access weather forecasts, tide information, and wind data to plan your fishing trips. Join our growing community, explore fishing spots, and document your fishing journey.",
+  "form": {
+    "email": {
+      "placeholder": "Enter your email address",
+      "error": "Please enter a valid email address"
+    },
+    "submit": "Join Waitlist",
+    "submitting": "Saving...",
+    "success": {
+      "title": "Thank you! Your email has been successfully registered!",
+      "description": "We'll notify you when the app is ready.",
+      "backButton": "Add Another Email"
+    }
+  },
+  "benefits": {
+    "earlyAccess": {
+      "title": "Early Access",
+      "description": "Be among the first to experience when the app launches!"
+    },
+    "specialBenefits": {
+      "title": "Special Benefits",
+      "description": "Early registration discounts for premium features!"
+    },
+    "vipCommunity": {
+      "title": "VIP Community",
+      "description": "Join the beta testing process and provide feedback!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Fishivo. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}

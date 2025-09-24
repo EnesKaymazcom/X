@@ -1,0 +1,81 @@
+{
+  "title": "Notifications",
+  "markAllRead": "Mark All as Read",
+  "filters": {
+    "all": "All",
+    "unread": "Unread",
+    "social": "Social",
+    "system": "System"
+  },
+  "timeAgo": {
+    "now": "Now",
+    "minutes": "{{count}} min ago",
+    "hours": "{{count}} hours ago",
+    "days": "{{count}} days ago"
+  },
+  "empty": {
+    "title": "No Notifications",
+    "description": "You don't have any notifications yet"
+  },
+  "types": {
+    "like": "Like",
+    "comment": "Comment",
+    "follow": "Follow",
+    "post": "Post",
+    "system": "System",
+    "catch": "Catch",
+    "location": "Location"
+  },
+  "actions": {
+    "delete": "Delete"
+  },
+  "errors": {
+    "loadFailed": "Error loading notifications"
+  },
+  "settings": {
+    "title": "Notification Settings",
+    "socialNotifications": "Social Notifications",
+    "systemNotifications": "System Notifications",
+    "likes": "Likes",
+    "likesDesc": "Get notified when your catches are liked",
+    "comments": "Comments",
+    "commentsDesc": "Get notified when someone comments on your catches",
+    "newFollowers": "New Followers",
+    "newFollowersDesc": "Get notified when someone follows you",
+    "mentions": "Mentions",
+    "mentionsDesc": "Get notified when you're mentioned in a post",
+    "newSpots": "New Fishing Spots",
+    "newSpotsDesc": "Get notified when new spots are added near you",
+    "weather": "Weather",
+    "weatherDesc": "Get notified about favorable fishing weather conditions",
+    "appUpdates": "App Updates",
+    "appUpdatesDesc": "Get notified about new features and updates",
+    "marketing": "Marketing",
+    "marketingDesc": "Get notified about special offers and promotions",
+    "pushNotifications": "Push Notifications",
+    "emailNotifications": "Email Notifications",
+    "categories": {
+      "social": "Social",
+      "likes": "Likes",
+      "comments": "Comments",
+      "follows": "Follows",
+      "posts": "Posts",
+      "system": "System",
+      "updates": "Updates",
+      "security": "Security"
+    },
+    "frequency": {
+      "title": "Notification Frequency",
+      "instant": "Instant",
+      "hourly": "Hourly",
+      "daily": "Daily",
+      "weekly": "Weekly"
+    },
+    "quietHours": {
+      "title": "Quiet Hours",
+      "enabled": "Enabled",
+      "from": "From",
+      "to": "To"
+    }
+  }
+}

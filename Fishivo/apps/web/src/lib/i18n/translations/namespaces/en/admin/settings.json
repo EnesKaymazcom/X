@@ -1,0 +1,55 @@
+{
+  "title": "System Settings",
+  "pageTitle": "System Settings | Fishivo Admin",
+  "tabs": {
+    "general": "General",
+    "email": "Email",
+    "storage": "Storage",
+    "api": "API",
+    "security": "Security",
+    "maintenance": "Maintenance"
+  },
+  "general": {
+    "siteName": "Site Name",
+    "siteUrl": "Site URL",
+    "adminEmail": "Admin Email",
+    "timezone": "Timezone",
+    "dateFormat": "Date Format",
+    "language": "Default Language"
+  },
+  "email": {
+    "provider": "Email Provider",
+    "smtpHost": "SMTP Host",
+    "smtpPort": "SMTP Port",
+    "smtpUser": "SMTP User",
+    "smtpPassword": "SMTP Password",
+    "fromEmail": "From Email",
+    "fromName": "From Name",
+    "testEmail": "Send Test Email"
+  },
+  "storage": {
+    "provider": "Storage Provider",
+    "maxFileSize": "Maximum File Size",
+    "allowedFileTypes": "Allowed File Types",
+    "storagePath": "Storage Path",
+    "cdnUrl": "CDN URL"
+  },
+  "api": {
+    "rateLimit": "Rate Limit",
+    "apiKeys": "API Keys",
+    "webhooks": "Webhooks",
+    "cors": "CORS Settings"
+  },
+  "security": {
+    "twoFactor": "Two-Factor Authentication",
+    "sessionTimeout": "Session Timeout",
+    "passwordPolicy": "Password Policy",
+    "ipWhitelist": "IP Whitelist"
+  },
+  "maintenance": {
+    "maintenanceMode": "Maintenance Mode",
+    "maintenanceMessage": "Maintenance Message",
+    "backupSchedule": "Backup Schedule",
+    "cacheSettings": "Cache Settings"
+  }
+}
