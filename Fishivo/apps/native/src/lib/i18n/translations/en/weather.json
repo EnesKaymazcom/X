@@ -1,9 +1,0 @@
-{
-  "title": "Weather",
-  "pressure": "Pressure",
-  "wind": "Wind",
-  "direction": "Direction",
-  "uvIndex": "UV Index",
-  "feelsLike": "Feels Like",
-  "humidity": "Humidity"
-}

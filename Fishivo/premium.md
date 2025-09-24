@@ -1,3 +1,0 @@
-Premium Özellikler
-
-Waypoinst Eklenmesi.

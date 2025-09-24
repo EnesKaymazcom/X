@@ -1,9 +1,0 @@
-{
-  "title": "Hava Durumu",
-  "pressure": "Basınç",
-  "wind": "Rüzgar",
-  "direction": "Yön",
-  "uvIndex": "UV İndeksi",
-  "feelsLike": "Hissedilen",
-  "humidity": "Nem"
-}
