@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Logo } from "@/components/logo";
 import {
@@ -34,10 +35,74 @@ import {
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: data.message || 'Message sent successfully!'
+        });
+        // Reset form
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          company: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: data.error || 'Failed to send message. Please try again.'
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'An error occurred. Please try again later.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const navItems = [
@@ -361,13 +426,16 @@ export default function Home() {
 
             <Card className="glass-card border-border/20">
               <CardContent className="p-8">
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <Label htmlFor="firstName">First Name</Label>
                       <Input
                         id="firstName"
                         placeholder="John"
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                        required
                         className="border-border/40 focus:border-accent backdrop-blur-sm"
                       />
                     </div>
@@ -376,6 +444,9 @@ export default function Home() {
                       <Input
                         id="lastName"
                         placeholder="Doe"
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                        required
                         className="border-border/40 focus:border-accent backdrop-blur-sm"
                       />
                     </div>
@@ -387,7 +458,10 @@ export default function Home() {
                       id="email"
                       type="email"
                       placeholder="john@example.com"
-                      className="border-foreground/20 focus:border-foreground"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="border-border/40 focus:border-accent backdrop-blur-sm"
                     />
                   </div>
 
@@ -396,17 +470,43 @@ export default function Home() {
                     <Input
                       id="company"
                       placeholder="Your Company"
-                      className="border-foreground/20 focus:border-foreground"
+                      value={formData.company}
+                      onChange={handleInputChange}
+                      className="border-border/40 focus:border-accent backdrop-blur-sm"
                     />
                   </div>
 
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Tell us about your project..."
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                      rows={4}
+                      className="border-border/40 focus:border-accent backdrop-blur-sm resize-none"
+                    />
+                  </div>
+
+                  {submitStatus.type && (
+                    <div className={`p-4 rounded-lg text-sm ${
+                      submitStatus.type === 'success'
+                        ? 'bg-green-500/10 text-green-500 border border-green-500/20'
+                        : 'bg-red-500/10 text-red-500 border border-red-500/20'
+                    }`}>
+                      {submitStatus.message}
+                    </div>
+                  )}
 
                   <Button
                     type="submit"
                     size="lg"
                     className="w-full"
+                    disabled={isSubmitting}
                   >
-                    Send Message
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </form>
